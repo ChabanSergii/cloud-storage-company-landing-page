@@ -1,0 +1,22 @@
+extends layout/app 
+
+block page
+    include chunk/header
+
+    h1 Главная !!!
+
+    
+    img(src="images/europ.png" alt="Europ" width="500")
+
+    ul
+        each item in news
+            li= item
+    ul
+        each item in news
+            li= item
+                
+    p привет иой свет
+
+                p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque suscipit esse quod laborum quia unde optio eum, rerum quasi possimus nulla voluptatem repudiandae provident aliquam, odio porro odit facilis.Perferendis, modi fugiat! Ex laboriosam dolore dolorum? Ab impedit, rerum soluta consequuntur cupiditate quod. Reprehenderit natus possimus at nobis consequuntur, repellat qui consequatur quo in, quibusdam quaerat id hic illo.Incidunt suscipit officiis impedit ex voluptas accusamus, dignissimos in, possimus modi voluptates debitis? Recusandae fugiat temporibus dicta ex aliquid nihil. Recusandae voluptatem tenetur ipsam, facilis placeat nulla quia aspernatur quo.        
+
+    include chunk/footer
