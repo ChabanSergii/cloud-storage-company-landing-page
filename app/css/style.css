@@ -1,0 +1,29 @@
+:root {
+    --text-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--text-color)
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+button {
+    padding: 0;
+}
+
+/* @import "block/normalize.css"; */

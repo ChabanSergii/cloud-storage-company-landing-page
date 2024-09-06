@@ -1,25 +1,25 @@
 /* Use only recommended task version for good work */
 const {src, dest, watch, parallel, series} = require('gulp');
-const browserSync       = require('browser-sync').create();
+const browserSync                          = require('browser-sync').create();
 
 
 /* Configs */
-const path              = require('./config/path.js')
-const app               = require('./config/app.js')
-const clean             = require('gulp-clean');
+const path      = require('./config/path.js')
+const app       = require('./config/app.js')
+const clean     = require('gulp-clean');
 /* const gp = require("gulp-load-plugins")(); полезный плагин для уменьшения кода */
 
 
 /* Plugins */
-const clear = require('./task/clear.js')
-const pug = require('./task/pug.js')
-const page = require('./task/page.js')
-const fonts = require('./task/fonts.js')
-const images = require('./task/images.js')
-const sprite = require('./task/svg.js')
-const scss = require('./task/scss.js')
-const scripts = require('./task/scripts.js')
-const avifimg = require('./task/avif.js')
+const clear     = require('./task/clear.js')
+const pug       = require('./task/pug.js')
+const page      = require('./task/page.js')
+const fonts     = require('./task/fonts.js')
+const images    = require('./task/images.js')
+const sprite    = require('./task/svg.js')
+const css       = require('./task/css.js')
+const scripts   = require('./task/scripts.js')
+const avifimg   = require('./task/avif.js')
 
 
 /* Launching tasks based on changes */
@@ -29,13 +29,13 @@ function watching() {
             baseDir: path.app
         }
     });
-    watch([path.scss.watch], scss).on('all', browserSync.stream)
+    watch([path.css.watch], css).on('all', browserSync.stream)
     watch([path.img.watch], images).on('all', browserSync.reload)
     watch([path.fonts.watch], fonts).on('all', browserSync.stream)
     watch([path.js.watch], scripts).on('all', browserSync.reload)
-    watch([path.pug.watch], pug).on('all', browserSync.reload)
     watch([path.page.app]).on('change', browserSync.reload)                 /* for pug and page */
-    /* watch([path.page.components, path.page.watch], pages) */
+    watch([path.page.components, path.page.watch], page).on('all', browserSync.reload)
+    /* watch([path.pug.watch], pug).on('all', browserSync.reload) */
 }
 
 
@@ -62,7 +62,7 @@ function building() {
 
 const build = series(
     clear,
-    parallel(pug, scss, scripts, images, fonts)
+    parallel(page, css, scripts, images, fonts)
 );
 
 const dev   = series(
@@ -72,7 +72,7 @@ const dev   = series(
 
 
 /* Tasks */
-exports.scss         = scss;
+exports.css          = css;
 exports.avifimg      = avifimg;
 exports.images       = images;
 exports.sprite       = sprite;
@@ -93,10 +93,3 @@ exports.default  = app.isProd
     ? build
     : dev;
 
-
-/* 
-Steps:
-- gulp images
-- gulp avifimg
-- gulp sprite
-*/

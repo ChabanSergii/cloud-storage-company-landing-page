@@ -56,7 +56,6 @@
     "browser-sync": "3.0.2",
     "gulp-autoprefixer": "8.0.0",
     "gulp-imagemin": "7.1.0",
-    "gulp-webp": "4.0.1",
-    "swiper": "11.1.11"
+    "gulp-webp": "4.0.1"
   }
 }

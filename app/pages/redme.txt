@@ -1,0 +1,11 @@
+//=require vendor/jquery.js
+//=require vendor/**/*.js
+//=include relative/path/to/file.js
+//=include ./relative/path/to/file-even-when-includePaths-set.js
+/*=include relative/path/to/file.css */
+#=include relative/path/to/file.coffee 
+<!--=include relative/path/to/file.html -->
+
+
+Mo details:
+https://www.npmjs.com/package/gulp-include

@@ -19,7 +19,6 @@ const autoprefixer      = require('gulp-autoprefixer');         /* !!! use only 
 const csso              = require('gulp-csso');
 const size              = require('gulp-size');                 /* !!! use only 4.0.1 !!! */
 const rename            = require('gulp-rename');
-const shorthand         = require('gulp-shorthand');
 const cssMedia          = require('gulp-group-css-media-queries');
 const shorthand         = require('gulp-shorthand');
 const webpCss           = require('gulp-webp-css');
@@ -27,7 +26,7 @@ const webpCss           = require('gulp-webp-css');
 
 /* CSS */
 function css() {
-    return src([path.css.swiper, path.css.src], { sourcemaps: app.isDev })
+    return src([path.css.src], { sourcemaps: app.isDev })
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
                 title: "CSS",
@@ -45,7 +44,7 @@ function css() {
         .pipe(rename({ suffix: ".min" }))
         .pipe(csso())
         .pipe(size({ title: "main.min.css" }))
-        .pipe(dest(path.css.srcapp, { sourcemaps: app.isDev }))
+        /* .pipe(dest(path.css.srcapp, { sourcemaps: app.isDev })) */
         .pipe(dest(path.css.dest, { sourcemaps: app.isDev }))
 }
 
