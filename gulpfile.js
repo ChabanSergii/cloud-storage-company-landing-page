@@ -29,7 +29,7 @@ function watching() {
             baseDir: path.app
         }
     });
-    watch([path.css.watch], css).on('all', browserSync.stream)
+    watch([path.css.watch], css).on('all', browserSync.reload)
     watch([path.img.watch], images).on('all', browserSync.reload)
     watch([path.fonts.watch], fonts).on('all', browserSync.stream)
     watch([path.js.watch], scripts).on('all', browserSync.reload)

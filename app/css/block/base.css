@@ -1,6 +1,4 @@
-:root {
-    --text-color: black;
-}
+/* base.css */
 
 * {
     box-sizing: border-box;
@@ -26,4 +24,11 @@ button {
     padding: 0;
 }
 
-/* @import "block/normalize.css"; */
+body {
+    outline: 2px solid red;
+}
+
+.container {
+    outline: 2px dotted blue;
+}
+

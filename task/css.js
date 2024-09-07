@@ -35,17 +35,21 @@ function css() {
         }))
         .pipe(concat("main.css"))
         .pipe(cssimport())
-        .pipe(webpCss())
         .pipe(autoprefixer())
         .pipe(shorthand())
         .pipe(cssMedia())
+        /* .pipe(webpCss()) не работает*/
         .pipe(size({ title: "main.css" }))
         .pipe(dest(path.css.dest, { sourcemaps: app.isDev }))
+
+        /* Minify css */
         .pipe(rename({ suffix: ".min" }))
         .pipe(csso())
-        .pipe(size({ title: "main.min.css" }))
-        /* .pipe(dest(path.css.srcapp, { sourcemaps: app.isDev })) */
+        .pipe(size({ title: "main.min.css" })) 
         .pipe(dest(path.css.dest, { sourcemaps: app.isDev }))
+
+        
+        /* .pipe(dest(path.css.srcapp, { sourcemaps: app.isDev })) */
 }
 
 
