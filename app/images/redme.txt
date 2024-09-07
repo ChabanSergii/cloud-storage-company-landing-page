@@ -1,0 +1,6 @@
+Steps:
+
+- run images;
+- run sprite;
+- run avifimg;
+- run cleaner;

@@ -6,7 +6,6 @@ const browserSync                          = require('browser-sync').create();
 /* Configs */
 const path      = require('./config/path.js')
 const app       = require('./config/app.js')
-const clean     = require('gulp-clean');
 /* const gp = require("gulp-load-plugins")(); полезный плагин для уменьшения кода */
 
 
@@ -20,6 +19,7 @@ const sprite    = require('./task/svg.js')
 const css       = require('./task/css.js')
 const scripts   = require('./task/scripts.js')
 const avifimg   = require('./task/avif.js')
+const cleanimg  = require('./task/imgcleaner.js')
 
 
 /* Launching tasks based on changes */
@@ -36,13 +36,6 @@ function watching() {
     watch([path.page.app]).on('change', browserSync.reload)                 /* for pug and page */
     watch([path.page.components, path.page.watch], page).on('all', browserSync.reload)
     /* watch([path.pug.watch], pug).on('all', browserSync.reload) */
-}
-
-
-/* Зачем это */
-function cleanDist() {
-    return src('dist')
-        .pipe(clean())
 }
 
 
@@ -82,8 +75,8 @@ exports.pug          = pug;
 exports.building     = building;
 exports.scripts      = scripts;
 exports.watching     = watching;
-exports.cleanDist    = cleanDist;
 exports.clear        = clear;
+exports.cleanimg     = cleanimg;
 
 
 /* Project assembly */

@@ -28,11 +28,8 @@ function avifimg() {
             }))
         }))
         .pipe(size({ title: "Before: " }))
-        .pipe(newer(path.img.dest))
-        .pipe(avif({ quality : 50}))
+        .pipe(avif({ quality : 85}))
         .pipe(size({ title: "After: " }))
-        
- 
         .pipe(dest(path.img.dest))
 }
 

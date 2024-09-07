@@ -41,6 +41,12 @@ function images() {
         /* .pipe(gulpif(app.isProd, imagemin(app.imagemin))) */
         .pipe(imagemin(app.imagemin))
         .pipe(dest(path.img.dest))
+
+        /* Img for dev */
+        .pipe(src(path.svg.srcsvg, { encoding: false }))
+        .pipe(newer(path.svg.srcmin))
+        .pipe(imagemin(app.imagemin))
+        .pipe(dest(path.svg.srcmin))
 }
 
 

@@ -52,13 +52,13 @@ module.exports = {
     },
 
     img: {
-        src: pathApp + '/images/src/*.{png,jpg,jpeg,gif,svg}',
-        watch: pathApp + '/images/**/*.{png,jpg,jpeg,gif,svg}',
+        src: pathApp + '/images/src/*.{png,jpg,jpeg,gif}',
+        watch: pathApp + '/images/**/*.{png,jpg,jpeg,gif}',
         dest: pathDist + '/images',
     },
 
     svg: {
-        srcsvg: pathApp + '/images/src/*.svg',
+        srcsvg: pathApp + '/images/svg/*.svg',
         srcmin: pathApp + '/images/',
         src: pathApp + '/images/*.svg',
         watch: pathApp + '/images/*.svg',
