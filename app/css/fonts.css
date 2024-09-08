@@ -1,0 +1,58 @@
+
+/* Import fonts */
+
+@font-face {
+    font-family: 'IstokWeb-Bold';
+    src: url('../fonts/IstokWeb-Bold.woff2') format('woff2'),
+         url('../fonts/IstokWeb-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../fonts/Poppins-Bold.woff2') format('woff2'),
+         url('../fonts/Poppins-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+         url('../fonts/Poppins-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+         url('../fonts/Poppins-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../fonts/Poppins-SemiBold.woff2') format('woff2'),
+         url('../fonts/Poppins-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+         url('../fonts/Roboto-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+         url('../fonts/Roboto-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}

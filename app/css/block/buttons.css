@@ -1,0 +1,10 @@
+
+/* All button styles */
+
+:root {
+    --btn-dark_background-color: rgba(69, 90, 100, 1);
+    --btn-fill_text-color: rgba(243, 252, 255, 1);
+    --btn_text-color: rgba(0, 0, 0, 1);
+    --btn_background-color: rgba(254, 156, 105, 1);
+    --btn_border-bradius: 8px;
+}

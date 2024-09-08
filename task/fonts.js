@@ -27,12 +27,13 @@ function fonts() {
                 message: error.message
             }))
         }))
-        .pipe(newer(path.fonts.dest))
+        .pipe(newer(path.fonts.result))
+        /* conwert to ttf and woff */
         .pipe(fonter(app.fonter))
         .pipe(src(path.fonts.srcttf, { encoding: false, removeBOM: false }))
         .pipe(ttf2woff2())
         /* .pipe(dest(path.fonts.result)) */
-        .pipe(dest(path.fonts.dest))
+        .pipe(dest(path.fonts.result))
 }
 
 

@@ -1,3 +1,6 @@
 @import "../../node_modules/normalize.css/normalize.css";
-@import "./block/fonts.css";
+@import "./fonts.css";
 @import "./block/base.css";
+@import "./block/text.css";
+@import "./block/buttons.css";
+@import "./block/blocks.css";
