@@ -6,5 +6,19 @@
     --btn-fill_text-color: rgba(243, 252, 255, 1);
     --btn_text-color: rgba(0, 0, 0, 1);
     --btn_background-color: rgba(254, 156, 105, 1);
-    --btn_border-bradius: 8px;
+    --btn_border-radius: 8px;
+}
+
+.btn {
+    padding: 5px 19px;
+    border-radius: var(--btn_border-radius);
+    border: 3px solid var(--btn_background-color);
+    color: var(--btn_text-color);
+    font-family: 'Poppins-Bold';
+}
+
+.btn-fill {
+    padding: 5px 19px;
+    border-radius: var(--btn_border-radius);
+    
 }

@@ -1,6 +1,42 @@
 @import "../../node_modules/normalize.css/normalize.css";
-@import "./fonts.css";
+@import "./text.css";
 @import "./block/base.css";
-@import "./block/text.css";
 @import "./block/buttons.css";
 @import "./block/blocks.css";
+@import "./block/sprite.css";
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 27px;
+}
+
+
+.header__select,
+.header__item {
+    font-family: 'Poppins-Bold', sans-serif;
+    line-height: 1;
+    font-size: 14px;
+}
+
+.header__item {
+    
+}
+
+.header__select {
+    border: none transparent;
+}
+

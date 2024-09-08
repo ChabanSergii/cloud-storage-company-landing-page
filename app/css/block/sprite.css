@@ -1,0 +1,33 @@
+
+/* All text styles */
+
+:root {
+    --social_background-color: rgba(254, 156, 105, 1);
+    --social_border-bradius: 50%;
+}
+
+.svg-Facebook-dims { width: 28px; height: 28px; }
+.svg-Instagram-dims { width: 28px; height: 28px; }
+.svg-LearnMoreicon-dims { width: 21px; height: 26px; }
+.svg-LinkedIn-dims { width: 28px; height: 28px; }
+.svg-Pinterest-dims { width: 28px; height: 28px;}
+.svg-Star-dims { width: 16px; height: 15px; }
+.svg-Twitter-dims { width: 28px; height: 28px; }
+.svg-YouTube-dims { width: 28px; height: 28px; }
+.svg-icon_1_55-dims { width: 48px; height: 38px; }
+.svg-icon_2_55-dims { width: 55px; height: 55px; }
+.svg-icon_3_55-dims { width: 55px; height: 55px; }
+.svg-icon_4-dims { width: 36px; height: 32px; }
+.svg-icon_5-dims { width: 32px; height: 32px; }
+.svg-icon_6-dims { width: 31px; height: 33px; }
+.svg-icon_7-dims { width: 25px; height: 17px; }
+.svg-icon_8-dims { width: 19px; height: 21px; }
+.svg-logo-dims { width: 28px; height: 26px; }
+.svg-mail-fill-dims { width: 18px; height: 18px; }
+.svg-phone-fill-dims { width: 18px; height: 18px; }
+.svg-select-dims { width: 6px; height: 5px; }
+
+
+.social__icon > picture {
+   width: 28px; height: 28px;
+}
