@@ -85,12 +85,17 @@
     font-size: 28px;
 }
 
+.title-dark,
 .title {
     margin-bottom: 17px;
     color: var(--text_light-color);
     font-family: 'Poppins-Bold', sans-serif;
     font-size: 42px;
     line-height: 126%; /* 52.92px */    
+}
+
+.title-dark {
+    color: var(--text_dark-color);
 }
 
 .text__description {
@@ -101,9 +106,20 @@
     letter-spacing: 0.5px;
 }
 
+.text__title-description {
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-description_dark-color);
+    font-family: 'Roboto-Medium',sans-serif;
+    font-size: 16.67px;
+    line-height: 148%; /* 24.705px */
+    letter-spacing: 0.5px;
+}
+
 .title__small { 
     color: var(--text-list-title_color);
     font-family: 'Roboto-Bold';
     font-size: 17.864px;
     line-height: 146.687%; /* 26.204px */
 }
+

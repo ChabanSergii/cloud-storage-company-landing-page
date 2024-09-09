@@ -2,12 +2,8 @@
 @import "./text.css";
 @import "./block/base.css";
 @import "./block/buttons.css";
-@import "./block/blocks.css";
 @import "./block/sprite.css";
-
-body {
-    position: relative;
-}
+@import "./block/two_blocks.css";
 
 :root {
     --main_color: rgba(254, 156, 105, 1);
@@ -23,8 +19,23 @@ body {
     --btn_text-color: rgba(0, 0, 0, 1);
     --btn_background-color: rgba(254, 156, 105, 1);
     --btn_border-radius: 8px;
+    --blocks_background-color: linear-gradient(300deg, #F5F2EB 1.26%, #F7E6CB 100.49%);
+    --blocks_box-shadow: 5.539px 5.539px 28.802px 0px #DD8762;
+    --blocks_small-shadow: 5px 5px 13px 0px #DD8762;
+    --blocks_border-radius: 44px;
+    --blocks-long_border-radius: 13px;
+    --blocks-store_border-radius: 6px;
+    --blocks-store_box-shadow: 0px 2px 2px 0px rgba(131, 131, 131, 0.47);
     --shop_border-radius: 4px;
  }
+
+body {
+    position: relative;
+}
+
+.container {
+    margin-bottom: 100px;
+}
 
 .logo {
     display: flex;
@@ -35,6 +46,20 @@ body {
     width: 131px;
     height: 45px;
     border-radius: var(--shop_border-radius);
+}
+
+.block {
+    background: var(--blocks_background-color);
+    box-shadow: var(--blocks_small-shadow);
+    border-radius: var(--blocks_border-radius);
+}
+
+.icon {
+    background-color: var(--main_color);
+    border-radius: 12px;
+    width: 67px;
+    height: 67px;
+    text-align: center;
 }
 
 /* Header */
@@ -61,6 +86,7 @@ body {
 .header__select {
     border: none transparent;
 }
+
 
 /* Hero */
 .hero__container {
@@ -135,6 +161,41 @@ body {
 .hero__img-inner {
     max-width: 434px;
 }
+
+/* Adventages */
+.advantages__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.advantages__item {
+    padding: 43px 37px 40px;
+    max-width: 363px;
+    margin-bottom: 62px;
+}
+
+.advantages__title {
+    margin-bottom: 10px;
+}
+
+.advantages__icon {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 16px;
+}
+
+.advantages__title-description {
+    max-width: 601px;
+    margin-bottom: 74px;
+}
+
+/* Share */
+
+
+
+
 
 /* Footer */
 .footer__container {

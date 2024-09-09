@@ -1,0 +1,23 @@
+
+/* Two blocks styles */
+
+.share__container {
+    padding-right: 69px;
+    padding-left: 69px;
+    display: flex;
+    align-items: center;
+}
+
+.share__info,
+.share__img {
+    flex: 1 1 49%;
+}
+
+.share__img-inner {
+    max-width: 520px;
+}
+
+.share__tetx {
+    margin-top: 0;
+    margin-bottom: 34px;
+}
