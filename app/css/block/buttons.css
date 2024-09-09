@@ -20,5 +20,7 @@
 .btn-fill {
     padding: 5px 19px;
     border-radius: var(--btn_border-radius);
-    
+    background-color: var(--btn_background-color);
+    border: none;
+    color: var(--btn-fill_text-color) !important;
 }

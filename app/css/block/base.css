@@ -34,12 +34,17 @@ ul {
 a {
     color: var(--text-color);
     text-decoration: none;
+    text-wrap: nowrap;
 }
 
 a:visited {color: var(--text-color);}
 
 
-button {padding: 0;}
+button {
+    padding: 0;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
 
 
 img {width: 100%;}
@@ -47,4 +52,3 @@ img {width: 100%;}
 address {
     font-style: normal;
 }
-

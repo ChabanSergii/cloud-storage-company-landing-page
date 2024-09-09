@@ -75,8 +75,35 @@
     --text-logo_color: rgba(50, 50, 50, 1);
 }
 
+.text__center {
+    text-align: center;
+}
+
 .logo__text {
     font-family: 'IstokWeb-Bold', sans-serif;
     color: var(--text-logo_color);
     font-size: 28px;
+}
+
+.title {
+    margin-bottom: 17px;
+    color: var(--text_light-color);
+    font-family: 'Poppins-Bold', sans-serif;
+    font-size: 42px;
+    line-height: 126%; /* 52.92px */    
+}
+
+.text__description {
+    color: var(--text-description_light-color);
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 147%; /* 24.446px */
+    letter-spacing: 0.5px;
+}
+
+.title__small { 
+    color: var(--text-list-title_color);
+    font-family: 'Roboto-Bold';
+    font-size: 17.864px;
+    line-height: 146.687%; /* 26.204px */
 }
