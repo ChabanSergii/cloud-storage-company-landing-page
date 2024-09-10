@@ -4,6 +4,7 @@
 @import "./block/buttons.css";
 @import "./block/sprite.css";
 @import "./block/two_blocks.css";
+@import "block/two_blocks_with_list.css";
 
 :root {
     --main_color: rgba(254, 156, 105, 1);
@@ -27,7 +28,7 @@
     --blocks-store_border-radius: 6px;
     --blocks-store_box-shadow: 0px 2px 2px 0px rgba(131, 131, 131, 0.47);
     --shop_border-radius: 4px;
- }
+}
 
 body {
     position: relative;
@@ -48,10 +49,15 @@ body {
     border-radius: var(--shop_border-radius);
 }
 
+.block_big,
 .block {
     background: var(--blocks_background-color);
     box-shadow: var(--blocks_small-shadow);
     border-radius: var(--blocks_border-radius);
+}
+
+.block_big {
+    box-shadow: var(--blocks_box-shadow);
 }
 
 .icon {
@@ -62,8 +68,29 @@ body {
     text-align: center;
 }
 
+.shop {
+    display: flex;
+    align-items: center;
+}
+
+.shop-inner {
+    margin-right: 13px;
+    transform: translateY(3px);
+}
+
+.dekor {
+    position: absolute;
+    width: 100%;
+    height: 716px;
+    background: linear-gradient(178deg, #FFFBF0 4.22%, #F7E6CC 98.53%);
+    filter: drop-shadow(0px 5px 26px #DD8762);
+    z-index: -1;
+    border-radius: 0px 0px 750px 750px / 0px 0px 90px 90px;
+}
+
 /* Header */
 .header-container {
+    margin-bottom: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -86,7 +113,6 @@ body {
 .header__select {
     border: none transparent;
 }
-
 
 /* Hero */
 .hero__container {
@@ -174,6 +200,7 @@ body {
     padding: 43px 37px 40px;
     max-width: 363px;
     margin-bottom: 62px;
+    align-self: stretch;
 }
 
 .advantages__title {
@@ -191,9 +218,50 @@ body {
     margin-bottom: 74px;
 }
 
-/* Share */
+/* Security */
+.security__container {
+    padding-left: 69px;
+    padding-right: 69px;
+}
 
+.security__contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.security__info,
+.security__img {
+    flex: 1 1 49%;
+}
+
+.security__img-inner {
+    max-width: 501px;
+}
+
+.title-dark {
+    color: var(--text_dark-color);
+    font-family: 'Poppins-Bold', sans-serif;
+}
+
+.security__title {
+    font-size: 19px !important;
+    margin-bottom: 15px;;
+    line-height: 148%; /* 29.203px */
+    letter-spacing: 0.5px;
+}
+
+.security__title-description {
+    margin-bottom: 100px;
+}
+
+.security__text {
+    margin-bottom: 15px;
+}
+
+.security__info > .shop {
+    margin-top: 44px;
+}
 
 
 
@@ -223,16 +291,6 @@ body {
     margin-bottom: 17px;
     line-height: 153%;
 }   
-
-.footer__shop {
-    display: flex;
-    align-items: center;
-}
-
-.footer__shop-inner {
-    margin-right: 13px;
-    transform: translateY(3px);
-}
 
 .footer__list-main {
     display: flex;

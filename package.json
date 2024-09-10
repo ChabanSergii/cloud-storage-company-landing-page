@@ -47,7 +47,7 @@
     "gulp-ttf2woff2": "4.0.1",
     "gulp-uglify-es": "3.0.0",
     "gulp-webp-css": "1.1.0",
-    "gulp-webp-html": "1.0.2",
+    "gulp-webp-html-nosvg": "1.1.1",
     "sass": "1.77.8",
     "webpack": "5.94.0",
     "webpack-stream": "7.0.0"

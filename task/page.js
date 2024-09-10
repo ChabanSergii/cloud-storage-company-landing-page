@@ -11,7 +11,7 @@ const app               = require('../config/app.js')
 const size              = require('gulp-size');                 /* !!! use only 4.0.1 !!! */
 const include           = require('gulp-include');
 const htmlmin           = require('gulp-htmlmin');
-const webpHtml          = require('gulp-webp-html');
+const webpHtml          = require('gulp-webp-html-nosvg');
 
 
 /* Error notification */

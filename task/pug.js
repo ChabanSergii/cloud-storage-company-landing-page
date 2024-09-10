@@ -9,7 +9,7 @@ const app               = require('../config/app.js')
 
 /* Plugins */
 const pugs              = require('gulp-pug');
-const webpHtml          = require('gulp-webp-html');
+const webpHtml          = require('gulp-webp-html-nosvg');
 
 
 /* Error notification */
