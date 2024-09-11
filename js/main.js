@@ -15,7 +15,7 @@
   \************************/
 /***/ (function() {
 
-eval("/* const mySum = require('./module/sum.js'); */\r\n\r\n/* import mySum from './module/sum.js' */\r\nconst sum = (a, b) => a + b;\r\nconsole.log(sum(2, 10));\r\nconsole.log(sum(2, 15));\n\n//# sourceURL=webpack://gulp-2024/./app/js/main.js?");
+eval("/* const mySum = require('./module/sum.js'); */\r\n\r\n/* import mySum from './module/sum.js' */\r\nconst sum = (a, b) => a + b;\r\nconsole.log(sum(2, 10));\r\nconsole.log(sum(2, 15));\n\n//# sourceURL=webpack://cloud-storage-company-landing-page/./app/js/main.js?");
 
 /***/ })
 
