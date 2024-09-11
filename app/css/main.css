@@ -179,6 +179,9 @@ body {
 
 .action__offers-inner {
     position: relative;
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+    line-height: 146.687%;
 }
 
 .delimitr::after{
@@ -457,11 +460,32 @@ body {
 
 .action__learn {
     position: absolute;
-    top: -60px;
+    top: -55px;
     left: 0;
     right: 0;
 } 
 
+/* Customers */
+.customers__container {
+    padding: 38px ;
+}
+
+.customers__img {
+    max-width: 747px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.customers__title-description {
+    margin-bottom: 62px;
+}
+
+.customers__offers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
 
 
 

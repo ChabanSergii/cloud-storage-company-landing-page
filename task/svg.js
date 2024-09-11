@@ -24,7 +24,7 @@ function sprite() {
             }
         }))
         .pipe(dest(path.svg.srcmin))
-        
+        .pipe(dest(path.svg.dest))
 }
 
 
