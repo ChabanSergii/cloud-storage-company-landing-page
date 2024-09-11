@@ -1,10 +1,12 @@
 {
-  "name": "gulp-2024",
+  "name": "cloud-storage-company-landing-page",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://ChabChabik.github.io/",
   "scripts": {
     "start": "gulp",
-    "build": "gulp --production"
+    "build": "gulp --production",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     "last 7 versions"
@@ -21,6 +23,7 @@
     "@babel/core": "7.25.2",
     "@babel/preset-env": "7.25.4",
     "del": "6.1.1",
+    "gh-pages": "6.1.1",
     "gulp": "5.0.0",
     "gulp-avif": "1.1.1",
     "gulp-babel": "8.0.0",

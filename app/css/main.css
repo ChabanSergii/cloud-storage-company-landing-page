@@ -266,8 +266,6 @@ body {
 /* Work */
 .work__container {
     padding: 116px 69px 146px;
-    padding-right: 69px;
-    padding-left: 69px;
     display: flex;
     align-items: center;
 }
@@ -285,7 +283,6 @@ body {
     margin-top: 0;
     margin-bottom: 34px;
 }
-
 
 .work__item {
     max-width: 300px;
@@ -331,8 +328,6 @@ body {
 /* Commands */
 .commands__container {
     padding: 0 69px;
-    padding-right: 49px;
-    padding-left: 49px;
     display: flex;
     align-items: center;
 }
@@ -385,6 +380,43 @@ body {
     padding-right: 34px;
     padding-left: 35px;
     height: 40px;
+}
+
+/* Keep */
+.keep__container {
+    padding: 72px 69px 72px;
+    display: flex;
+    align-items: center;
+}
+
+.keep__info,
+.keep__img {
+    flex: 1 1 49%;
+}
+
+.keep__img-inner {
+    max-width: 520px;
+}
+
+.keep__text,
+.keep__title-description {
+    width: 449px;
+    margin-left: 0;
+    margin-bottom: 13px;
+}
+
+.keep__text {
+    max-width: 449px;
+    margin-top: 0;
+    margin-bottom: 34px;
+}
+
+.keep__text,
+.keep__title {
+    color: var(--text-description_dark-color);
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 15px;
+    line-height: 153%; /* 24.09px */
 }
 
 /* Footer */
