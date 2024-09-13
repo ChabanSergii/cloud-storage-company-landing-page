@@ -1,0 +1,8 @@
+.title {
+  text-transform: uppercase;
+}
+@media ph {
+  .title {
+    text-align: center;
+  }
+}/*# sourceMappingURL=title.css.map */

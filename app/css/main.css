@@ -142,7 +142,7 @@ body {
     margin-bottom: 16px;
 }
 
-.hero__tetx {
+.hero__text {
     max-width: 449px;
     margin-bottom: 26px;
 }
@@ -286,7 +286,7 @@ body {
     max-width: 520px;
 }
 
-.work__tetx {
+.work__text {
     margin-top: 0;
     margin-bottom: 34px;
 }
@@ -487,10 +487,88 @@ body {
     gap: 16px;
 }
 
+/* User data */
+.userdata__container {
+    padding-right: 69px;
+    padding-left: 69px;
+    display: flex;
+    align-items: center;
+}
 
+.userdata__info,
+.userdata__img {
+    flex: 1 1 49%;
+}
 
+.userdata__img-inner {
+    max-width: 520px;
+}
 
+.userdata__text {
+    max-width: 426px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-right: 40px;
+    font-family: 'Roboto-Medium', sans-serif;
+    font-size: 16.67px;
+    color: var(--text-description_dark-color);
+}
 
+/* Features */
+.features__container {
+    padding: 0;
+}
+
+.features_title-main {
+    width: 641px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features__img {
+    max-width: 521px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features__title-description {
+    margin-bottom: 62px;
+}
+
+.features__info {
+    padding: 63px 156px 66px 155px;
+    box-shadow: 15px 15px 26px 0px #DD8762;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+    color: var(--text_dark-color);
+    font-family: 'Poppins-SemiBold', sans-serif;
+    line-height: normal;
+}
+
+.features__description {
+    max-width: 465px;
+    flex-shrink: 0;
+    font-size: 29px;
+    letter-spacing: 0.3px;
+}
+
+.features__download {
+    min-width: 160px;
+}
+
+.features__text-counter {
+    margin-bottom: 10px;
+    font-size: 54px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+}
+
+.features__text-small {
+    font-size: 14.6px;
+    letter-spacing: 0.15px;
+}
 
 
 /* Footer */

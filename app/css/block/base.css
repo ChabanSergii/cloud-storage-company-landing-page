@@ -23,7 +23,14 @@ body {
 
 * {box-sizing: border-box;}
 
-h1, h2, h3, h4, h5, h6, p {margin: 0;}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    text-wrap: balance;
+}
+
+p {
+    margin: 0;
+}
 
 ul {
     list-style: none;
@@ -45,7 +52,6 @@ button {
     cursor: pointer;
     text-wrap: nowrap;
 }
-
 
 img {width: 100%;}
 
