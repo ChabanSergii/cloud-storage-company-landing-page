@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="dekor"></div>
+    <div class="decor"></div>
     <header class="header">
         <div class="container header-container">
-            <a href="#" class="logo">
-                <img src="./images/sprite.svg#logo" class="svg-logo-dims" alt="logo">
-                <span class="logo__text">COMU</span>
-            </a>
+            <div class="header__logo">
+                <a href="#" class="logo">
+                    <img src="./images/sprite.svg#logo" class="svg-logo-dims" alt="logo">
+                    <span class="logo__text">COMU</span>
+                </a>
+            </div>
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
@@ -62,7 +64,7 @@
                         </a>
                     </div>
                     <div class="hero__offers">
-                        <div class="hero__offers-inner delimitr">14 days free trial </div>
+                        <div class="hero__offers-inner delimiter">14 days free trial </div>
                         <div class="hero__offers-inner">No credit card</div> 
                     </div>
                 </div>
@@ -228,7 +230,7 @@
         <section class="work">
             <div class="container work__container block_big">
                 <div class="work__info">
-                    <h2 class="title-dark work__title-main">
+                    <h2 class="title work__title-main">
                         Work smarter with powerful automation
                     </h2>
                     <p class="text__title-description work__title-description">
@@ -279,7 +281,6 @@
                             View Pricing
                         </a>
                     </div>
-                    
                 </div>
             </div>
         </section>
@@ -287,8 +288,8 @@
         <section class="keep">
             <div class="container keep__container block_big">
                 <div class="keep__info">
-                    <h2 class="title-dark keep__title-main">
-                        Keep your favourite people close to you
+                    <h2 class="title keep__title-main">
+                        Keep your favorite people close to you
                     </h2>
                     <p class="text__title-description keep__title-description">
                         Fringilla risus, luctus mauris orci auctor euismod iaculis luctus magna purus pretium ligula purus undo quaerat tempor sapien rutrum mauris quaerat ultrice
@@ -324,10 +325,10 @@
                         </a>
                     </div>
                     <div class="action__offers">
-                        <div class="action__offers-inner delimitr">
+                        <div class="action__offers-inner delimiter">
                             14 days free trial
                         </div>
-                        <div class="action__offers-inner delimitr">
+                        <div class="action__offers-inner delimiter">
                             Exclusive Support
                         </div>
                         <div class="action__offers-inner">
@@ -340,7 +341,7 @@
 
         <section class="customers">
             <div class="container customers__container block_big">
-                <h2 class="text__center title-dark customers_title-main">
+                <h2 class="text__center title customers_title-main">
                     Stories From Our Customers
                 </h2>
                 <p class="text__center text__title-description customers__title-description">
@@ -432,7 +433,7 @@
                         <article class="questions__block">
                             <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
                             <p class="questions__description">
-                                Etiam amet mauris suscipit in odio integer congue metus vitae arcu mollis blandit ultrice ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
+                                Etiam amet mauris suscipit in odio integer congue metus vitae arcu mollis blandit ultrices ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
                             </p>
                         </article>
                     </li>
@@ -496,6 +497,50 @@
                 </div>
             </div>
         </section>
+
+        <section class="unlimited">
+            <div class="container block_big unlimited__container">
+                <div class="unlimited__img">
+                    <picture><source srcset="./images/Group1691.webp" type="image/webp"><img src="./images/Group1691.png" alt="user anonymous" class="unlimited__img-inner"></picture>
+                </div>
+                <div class="unlimited__info">
+                    <h2 class="title unlimited__title">
+                        Share files, media, and locations
+                    </h2>
+                    <p class="text__description unlimited__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt neque eos quaerat dolorum suscipit, voluptatem error corrupti possimus eum mollitia harum fugit? Quas laudantium enim blanditiis atque, modi repudiandae praesentium
+                    </p>
+                    <div class="unlimited__buttons">
+                        <a href="#" role="button" class="btn-fill unlimited__btn">
+                            Let&apos;s Get Started
+                        </a>
+                        <a href="#" role="button" class="btn unlimited__btn">
+                            View Pricing
+                        </a>
+                    </div>
+                    
+                    <div class="unlimited__offers">
+                        <div class="unlimited__offers-inner delimiter">
+                            14 days free trial
+                        </div>
+                        <div class="unlimited__offers-inner delimiter">
+                            Exclusive Support
+                        </div>
+                        <div class="unlimited__offers-inner">
+                            No credit card
+                        </div> 
+                    </div>
+                    <div class="shop">
+                        <a href="#" class="shop-inner">
+                            <picture><source srcset="../images/appstore-white.webp" type="image/webp"><img src="../images/appstore-white.png" alt="app-store" class="store"></picture>
+                        </a>
+                        <a href="#" class="shop-inner">
+                            <picture><source srcset="../images/google-small-white.webp" type="image/webp"><img src="../images/google-small-white.png" alt="app-store" class="store"></picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="container footer__container">
@@ -505,7 +550,7 @@
                         <img src="./images/sprite.svg#logo" class="svg-logo-dims" alt="logo">
                         <span class="logo__text">COMU</span>
                     </a>
-                    <p class="text__description foote__description">
+                    <p class="text__description footer__description">
                         Aliquam nullam tempor sapien donec and gravida congue an ipsum porta justo velna auctor magna and laoreet augue an auctor gravida donec
                     </p>
                 </div>

@@ -31,7 +31,7 @@ function images() {
 
         .pipe(newer(path.img.dest))
         .pipe(webp({
-            quality: 50,
+            quality: 95,
             method: 6
         }))
         .pipe(dest(path.img.dest))
