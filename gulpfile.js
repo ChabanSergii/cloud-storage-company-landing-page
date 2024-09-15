@@ -6,7 +6,7 @@ const browserSync                          = require('browser-sync').create();
 /* Configs */
 const path      = require('./config/path.js')
 const app       = require('./config/app.js')
-/* const gp = require("gulp-load-plugins")(); полезный плагин для уменьшения кода */
+/* const gp = require("gulp-load-plugins")(); useful plugin for minify code */
 
 
 /* Plugins */
@@ -19,7 +19,6 @@ const sprite    = require('./task/svg.js')
 const css       = require('./task/css.js')
 const scripts   = require('./task/scripts.js')
 const avifimg   = require('./task/avif.js')
-const cleanimg  = require('./task/imgcleaner.js')
 
 
 /* Launching tasks based on changes */
@@ -76,7 +75,6 @@ exports.building     = building;
 exports.scripts      = scripts;
 exports.watching     = watching;
 exports.clear        = clear;
-exports.cleanimg     = cleanimg;
 
 
 /* Project assembly */

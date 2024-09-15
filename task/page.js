@@ -7,7 +7,7 @@ const path              = require('../config/path.js')
 const app               = require('../config/app.js')
 
 
-/* Plagins */
+/* Plugins */
 const size              = require('gulp-size');                 /* !!! use only 4.0.1 !!! */
 const include           = require('gulp-include');
 const htmlmin           = require('gulp-htmlmin');

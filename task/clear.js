@@ -1,9 +1,10 @@
 /* Configs */
-const path = require('../config/path.js')
+const path = require('../config/path.js');
 
 
-/* Plagins */
-const del = require('del')                        /* !!! use only 6.1.1 !!! */
+/* Plugins */
+const del = require('del');                        /* !!! use only 6.1.1 !!! */
+const fs  = require('fs');
 
 
 /* Del */

@@ -12,7 +12,7 @@ const plumber           = require('gulp-plumber');
 const notify            = require('gulp-notify');
 
 
-/* Plagins */
+/* Plugins */
 const autoprefixer      = require('gulp-autoprefixer');         /* !!! use only 8.0.0 !!! */
 const csso              = require('gulp-csso');
 const size              = require('gulp-size');                 /* !!! use only 4.0.1 !!! */

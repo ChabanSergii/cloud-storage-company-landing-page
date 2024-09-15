@@ -1,15 +1,15 @@
 /* Use only recommended task version for good work */
-const {src, dest, series}       = require('gulp');
+const {src, dest}       = require('gulp');
 
 
 /* Configs */
 const path              = require('../config/path.js')
 const app               = require('../config/app.js')
-const clean = require('gulp-clean')
 
 
-/* Plagins */
+/* Plugins */
 const svgSprite         = require('gulp-svg-sprite');
+const clean             = require('gulp-clean')
 
 
 /* SVG */
@@ -24,7 +24,12 @@ function sprite() {
             }
         }))
         .pipe(dest(path.svg.srcmin))
+        
+        .pipe(src(path.svg.srcmin))
         .pipe(dest(path.svg.dest))
+
+        /* .pipe(src(['app/images/*.svg', '!app/images/sprite.svg'], { read: false, encoding: false  }))
+        .pipe(clean()) */
 }
 
 
