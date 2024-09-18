@@ -2,12 +2,15 @@
     "cSpell.language": "en,lorem",
     "cSpell.words": [
         "Aliqum",
+        "avifimg",
         "COMU",
         "Cpath",
+        "cssimport",
         "csso",
         "Csvg",
         "curabite",
         "fixsvgstack",
+        "fonter",
         "gulpif",
         "htmlmin",
         "Moreicon",
@@ -17,9 +20,12 @@
         "pagea",
         "Pinterest",
         "prolyfill",
+        "srcapp",
         "srcmin",
         "srcsvg",
-        "ultrice"
+        "srcttf",
+        "ultrice",
+        "webp"
     ],
     "editor.linkedEditing": true
 }

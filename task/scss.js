@@ -24,15 +24,19 @@ const sassGlob          = require('gulp-sass-glob');
 const webpCss           = require('gulp-webp-css');
 
 
+const plumberScssConfig = {
+    errorHandler: notify.onError(error => ({
+        title: "SCSS",
+        message: '<%= error.message %>',
+        sound: true
+    }))
+}
+
+
 /* SCSS */
 function scss() {
     return src(path.scss.src, { sourcemaps: app.isDev })
-        .pipe(plumber({
-            errorHandler: notify.onError(error => ({
-                title: "SCSS",
-                message: error.message
-            }))
-        }))
+        .pipe(plumber(plumberScssConfig))
         .pipe(sassGlob())
         .pipe(sass())
         .pipe(webpCss())
@@ -41,6 +45,7 @@ function scss() {
         .pipe(scssMedia())
         .pipe(size({ title: "main.css" }))
         .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
+        .pipe(dest(path.scss.srcapp, { sourcemaps: app.isDev }))
         .pipe(rename({ suffix: ".min" }))
         .pipe(csso())
         .pipe(size({ title: "main.min.css" }))

@@ -18,17 +18,21 @@ const plumber           = require('gulp-plumber');
 const notify            = require('gulp-notify');
 
 
+const plumberAvifConfig = {
+    errorHandler: notify.onError(error => ({
+        title: "Avif img",
+        message: 'Error <%= error.message %>',
+        sound: true
+    }))
+}
+
+
 /* Images */
 function avifimg() {
     return src([path.img.src, '!./app/images/src/*.svg'], { encoding: false })
-        .pipe(plumber({
-            errorHandler: notify.onError(error => ({
-                title: "Avif img",
-                message: error.message
-            }))
-        }))
+        .pipe(plumber(plumberAvifConfig))
         .pipe(size({ title: "Before: " }))
-        .pipe(avif({ quality : 85}))
+        .pipe(avif({ quality : 90}))
         .pipe(size({ title: "After: " }))
         .pipe(dest(path.img.dest))
 }

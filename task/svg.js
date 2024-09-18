@@ -13,7 +13,7 @@ const clean             = require('gulp-clean')
 
 
 /* SVG */
-function sprite() {
+function sprite(done) {
     return src(path.svg.srcsvg, { encoding: false })
         .pipe(svgSprite({
             mode: {
@@ -25,11 +25,11 @@ function sprite() {
         }))
         .pipe(dest(path.svg.srcmin))
         
-        .pipe(src(path.svg.srcmin))
+        .pipe(src(path.svg.srcmin, { read: false, encoding: false }))
         .pipe(dest(path.svg.dest))
 
-        /* .pipe(src(['app/images/*.svg', '!app/images/sprite.svg'], { read: false, encoding: false  }))
-        .pipe(clean()) */
+        /* .pipe(src(['app/images/*.svg', '!app/images/sprite.svg'], { read: false, encoding: false }))
+        .pipe(clean(), done()) */
 }
 
 

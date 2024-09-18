@@ -17,6 +17,7 @@ const fonts     = require('./task/fonts.js')
 const images    = require('./task/images.js')
 const sprite    = require('./task/svg.js')
 const css       = require('./task/css.js')
+const scss      = require('./task/scss.js')
 const scripts   = require('./task/scripts.js')
 const avifimg   = require('./task/avif.js')
 
@@ -28,7 +29,8 @@ function watching() {
             baseDir: path.app
         }
     });
-    watch([path.css.watch], css).on('all', browserSync.reload)
+    watch([path.css.watch], css).on('all', browserSync.reload),
+    /* watch([path.css.watch], scss).on('all', browserSync.reload), */
     watch([path.img.watch], images).on('all', browserSync.reload)
     watch([path.fonts.watch], fonts).on('all', browserSync.stream)
     watch([path.js.watch], scripts).on('all', browserSync.reload)
@@ -52,6 +54,12 @@ function building() {
         .pipe(dest('./dist'))
 }
 
+/* If use SASS */
+/* const build = series(
+    clear,
+    parallel(page, scss, scripts, images, fonts)
+); */
+
 const build = series(
     clear,
     parallel(page, css, scripts, images, fonts)
@@ -65,6 +73,7 @@ const dev   = series(
 
 /* Tasks */
 exports.css          = css;
+exports.scss         = scss;
 exports.avifimg      = avifimg;
 exports.images       = images;
 exports.sprite       = sprite;

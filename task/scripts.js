@@ -20,8 +20,8 @@ const plumber           = require('gulp-plumber');
 const notify            = require('gulp-notify');
 
 
-/* JavaScript */
-function scripts() {
+/* JavaScript 1.0*/
+function scripts1() {
     return src([path.js.src], { sourcemaps: app.isDev })
         .pipe(plumber({
             errorHandler: notify.onError(error => ({
@@ -30,7 +30,7 @@ function scripts() {
             }))
         }))
         /* .pipe(concat('main.min.js')) */
-        .pipe(babel())
+        .pipe(babel()) /* транспилирует новый js code в старый */
         .pipe(size({ title: "Before uglify" }))
         .pipe(webpack(app.webpack))
         /* .pipe(uglify()) возможно удалить???*/
@@ -38,5 +38,20 @@ function scripts() {
         .pipe(dest(path.js.dest, { sourcemaps: app.isDev }))
 }
 
+/* JavaScript 2.0*/
+function scripts2() {
+    return src([path.js.src], { sourcemaps: app.isDev })
+        .pipe(plumber({
+            errorHandler: notify.onError(error => ({
+                title: "JavaScript",
+                message: error.message
+            }))
+        }))
+        .pipe(babel()) /* транспилирует новый js code в старый */
+        .pipe(webpack(require('../config/webpack.config.js')))
+        .pipe(dest(path.js.dest, { sourcemaps: app.isDev }))
+        .pipe(dest(path.js.srcapp, { sourcemaps: app.isDev }))
+}
 
-module.exports = scripts;
+
+module.exports = scripts2;

@@ -47,8 +47,8 @@ module.exports = {
     js: {
         src: pathApp + '/js/*.js',
         watch: pathApp + '/js/**/*.js',
+        srcapp: pathApp + '/js/',
         dest: pathDist + '/js',
-        swiper: './node_modules/swiper/swiper-bundle.js',
     },
 
     img: {
