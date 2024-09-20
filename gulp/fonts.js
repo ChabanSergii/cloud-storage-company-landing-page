@@ -28,7 +28,7 @@ function fonts() {
             }))
         }))
         .pipe(newer(path.fonts.result))
-        /* conwert to ttf and woff */
+        /* convert to ttf and woff */
         .pipe(fonter(app.fonter))
         .pipe(src(path.fonts.srcttf, { encoding: false, removeBOM: false }))
         .pipe(ttf2woff2())

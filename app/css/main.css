@@ -28,6 +28,15 @@
     --blocks-store_border-radius: 6px;
     --blocks-store_box-shadow: 0px 2px 2px 0px rgba(131, 131, 131, 0.47);
     --shop_border-radius: 4px;
+
+    /* Burger menu */
+    --time: 0.1s;
+    --width: 40px;
+    --height: 30px;
+    --line-height: 4px;
+    --spacing: 6px;
+    --color: black;
+    --radius: 4px;
 }
 
 body {
@@ -839,4 +848,109 @@ body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 11px 40px;
+}
+
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    top: -100%;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: var(--main_color);
+    transition: all 0.2s ease-in;
+}
+
+.mobile-nav--open {
+    top: 0;
+}
+
+.mobile-nav a {
+    color: var(--btn-fill_text-color);
+}
+
+.mobile-nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    font-size: 28px;
+}
+
+.mobile-nav__list .active {
+    opacity: 0.5;
+}
+
+/* Nac Icon */
+
+.mobile-nav-btn {
+    /* Fixed height and width */
+    /* height: var(--height); */
+    /* width: var(--width); */
+    
+    /* Dynamic height and width */
+    height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+    width: var(--width);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.nav-icon {
+    position: relative;
+    width: var(--width);
+    height: var(--line-height);
+    background-color: var(--text_light-color);
+    border-radius: var(--radius);
+}
+
+.nav-icon::before,
+.nav-icon::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+    left: 0;
+
+    width: var(--width);
+    height: var(--line-height);
+
+    border-radius: var(--radius);
+    background-color: var(--text_light-color);
+    transition: transform var(--time) ease-in,
+        top var(--time) linear var(--time);
+}
+
+.nav-icon::before {
+    top: calc(-1 * (var(--line-height) + var(--spacing)));
+}
+
+.nav-icon::after {
+    top: calc(var(--line-height) + var(--spacing));
+}
+
+.nav-icon.nav-icon--active {
+    background-color: transparent;
+}
+
+.nav-icon.nav-icon--active::before,
+.nav-icon.nav-icon--active::after {
+    top: 0;
+    transition: top var(--time) linear,
+        transform var(--time) ease-in var(--time);
+}
+
+.no-scroll {
+    overflow-y: hidden;
 }

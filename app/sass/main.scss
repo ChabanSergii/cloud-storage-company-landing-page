@@ -1,32 +1,10 @@
-$base-font-size: 22px;
+// Base
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
 
-@mixin ph {
-    @media (max-width: 700px) {
-        @content;
-    }
-}
-
-* {
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-    background-color: green;
-}
-
-body {
-    font-size: $base-font-size;
-    font-family: serif;
-    line-height: 1.5;
-    background: url("../images/london.png") no-repeat / cover;
-
-    @include ph {
-        color: white;
-        background-color: black;
-    }
-}
-
-@import "./block/header";
-@import "./block/footer";
-/* @import "block/*.scss"; */
+// Blocks
+@import "blocks/*.scss";

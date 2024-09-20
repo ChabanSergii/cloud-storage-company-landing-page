@@ -10,16 +10,16 @@ const app       = require('./config/app.js')
 
 
 /* Plugins */
-const clear     = require('./task/clear.js')
-const pug       = require('./task/pug.js')
-const page      = require('./task/page.js')
-const fonts     = require('./task/fonts.js')
-const images    = require('./task/images.js')
-const sprite    = require('./task/svg.js')
-const css       = require('./task/css.js')
-const scss      = require('./task/scss.js')
-const scripts   = require('./task/scripts.js')
-const avifimg   = require('./task/avif.js')
+const clear     = require('./gulp/clear.js')
+const pug       = require('./gulp/pug.js')
+const page      = require('./gulp/page.js')
+const fonts     = require('./gulp/fonts.js')
+const images    = require('./gulp/images.js')
+const sprite    = require('./gulp/svg.js')
+const css       = require('./gulp/css.js')
+const scss      = require('./gulp/scss.js')
+const scripts   = require('./gulp/scripts.js')
+const avifimg   = require('./gulp/avif.js')
 
 
 /* Launching tasks based on changes */
@@ -29,13 +29,15 @@ function watching() {
             baseDir: path.app
         }
     });
-    watch([path.css.watch], css).on('all', browserSync.reload),
-    /* watch([path.css.watch], scss).on('all', browserSync.reload), */
+    watch([path.css.watch], css).on('all', browserSync.reload)
     watch([path.img.watch], images).on('all', browserSync.reload)
     watch([path.fonts.watch], fonts).on('all', browserSync.stream)
     watch([path.js.watch], scripts).on('all', browserSync.reload)
-    watch([path.page.app]).on('change', browserSync.reload)                 /* for pug and page */
+    watch([path.page.app]).on('change', browserSync.reload)                 /* for pug and page tasks */
     watch([path.page.components, path.page.watch], page).on('all', browserSync.reload)
+    /* If use SASS */
+    /* watch([path.css.watch], scss).on('all', browserSync.reload), */
+    /* If use PUG */
     /* watch([path.pug.watch], pug).on('all', browserSync.reload) */
 }
 

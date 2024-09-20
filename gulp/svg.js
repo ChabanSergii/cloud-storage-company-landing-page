@@ -27,9 +27,6 @@ function sprite(done) {
         
         .pipe(src(path.svg.srcmin, { read: false, encoding: false }))
         .pipe(dest(path.svg.dest))
-
-        /* .pipe(src(['app/images/*.svg', '!app/images/sprite.svg'], { read: false, encoding: false }))
-        .pipe(clean(), done()) */
 }
 
 
