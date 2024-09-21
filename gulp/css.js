@@ -22,6 +22,7 @@ const rename            = require('gulp-rename');
 const cssMedia          = require('gulp-group-css-media-queries');
 const shorthand         = require('gulp-shorthand');
 const webpCss           = require('gulp-webp-css');
+const replace           = require('gulp-replace');
 
 
 /* CSS */
@@ -38,8 +39,14 @@ function css() {
         .pipe(autoprefixer())
         .pipe(shorthand())
         .pipe(cssMedia())
-        /* .pipe(webpCss()) не работает*/
+        /* .pipe(webpCss()) */
         .pipe(size({ title: "main.css" }))
+        .pipe(
+			replace(
+				/(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+				'$1$2$3$4$6$1'
+			)
+		)
         .pipe(dest(path.css.dest, { sourcemaps: app.isDev }))
 
         /* Minify css */

@@ -22,6 +22,7 @@
   "devDependencies": {
     "@babel/core": "7.25.2",
     "@babel/preset-env": "7.25.4",
+    "browser-sync": "3.0.2",
     "css-loader": "7.1.2",
     "del": "6.1.1",
     "gh-pages": "6.1.1",
@@ -45,23 +46,22 @@
     "gulp-plumber": "1.2.1",
     "gulp-pug": "5.0.0",
     "gulp-rename": "2.0.0",
+    "gulp-replace": "^1.1.4",
     "gulp-sass": "5.1.0",
     "gulp-sass-glob": "1.1.0",
     "gulp-shorthand": "1.1.0",
     "gulp-size": "4.0.1",
     "gulp-svg-sprite": "2.0.3",
     "gulp-ttf2woff2": "4.0.1",
+    "gulp-typograf": "^4.1.0",
     "gulp-uglify-es": "3.0.0",
     "gulp-webp": "4.0.1",
     "gulp-webp-css": "1.1.0",
     "gulp-webp-html-nosvg": "1.1.1",
+    "normalize.css": "^8.0.1",
     "sass": "1.77.8",
     "style-loader": "4.0.0",
     "webpack": "5.94.0",
-    "browser-sync": "3.0.2",
-    "normalize.css": "^8.0.1",
     "webpack-stream": "7.0.0"
-  },
-  "dependencies": {
   }
 }

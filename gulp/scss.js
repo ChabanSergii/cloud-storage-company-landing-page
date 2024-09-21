@@ -22,6 +22,7 @@ const scssMedia         = require('gulp-group-css-media-queries');
 const sass              = require('gulp-sass')(require('sass'));
 const sassGlob          = require('gulp-sass-glob');
 const webpCss           = require('gulp-webp-css');
+const replace           = require('gulp-replace');
 
 
 const plumberScssConfig = {
@@ -44,6 +45,12 @@ function scss() {
         .pipe(shorthand())
         .pipe(scssMedia())
         .pipe(size({ title: "main.css" }))
+        .pipe(
+			replace(
+				/(['"]?)(\.\.\/)+(img|images|fonts|css|scss|sass|js|files|audio|video)(\/[^\/'"]+(\/))?([^'"]*)\1/gi,
+				'$1$2$3$4$6$1'
+			)
+		)
         .pipe(dest(path.scss.dest, { sourcemaps: app.isDev }))
         .pipe(dest(path.scss.srcapp, { sourcemaps: app.isDev }))
         .pipe(rename({ suffix: ".min" }))
