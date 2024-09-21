@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Document</title>
+    <meta name="description" content="Hi, there! I want to become a good frontend developer...">
+    <title>COMU</title>
     <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="favicon" type="image/png" href="./images/favicon/favicon.png"> -->
 </head>
 <body>
     <div class="decor"></div>
@@ -16,9 +18,12 @@
                     <span class="logo__text">COMU</span>
                 </a>
             </div>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item">
+            <button class="mobile-nav-btn">
+                <div class="nav-icon"></div>
+            </button>
+            <nav class="header__nav mobile-nav">
+                <ul class="header__list mobile-nav__list">
+                    <li class="header__item active">
                         <select name="home" id="home" class="header__select">
                             <option value="home" class="header__option">Home</option>
                         </select>
@@ -641,8 +646,8 @@
                     </form>
                 </div>
             </div>
-            <div class="copiright">
-                <small class="copiright__text">© 2010 - 2021 OLMO. All Rights Reserved</small>
+            <div class="copyright">
+                <small class="copyright__text">© 2010 - 2021 OLMO. All Rights Reserved</small>
                 <ul class="social__list">
                     <li class="social__item">
                         <a href="" class="social__icon">
@@ -680,9 +685,10 @@
                     <a href="tel:+000 000 00 00" class="contacts__tel">+000 000 00 00</a>
                 </address>
             </div>
-            <div class="copiright__background"></div>
+            <div class="copyright__background"></div>
         </div>
     </footer>
+    <script src="../js/index.bundle.js"></script>
 </body>
 </html>
 
