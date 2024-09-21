@@ -64,7 +64,7 @@ function building() {
 
 const build = series(
     clear,
-    parallel(page, css, scripts, images, fonts)
+    parallel(page, css, scripts, sprite, images, fonts)
 );
 
 const dev   = series(

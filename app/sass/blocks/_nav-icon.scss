@@ -69,6 +69,23 @@
         transform var(--time) ease-in var(--time);
 }
 
-/* .nav-icon.nav-icon--active::before {
+.nav-icon.nav-icon--active::before {
+	transform: rotate(45deg);
+}
 
-} */
+.nav-icon.nav-icon--active::after {
+	transform: rotate(-45deg);
+}
+
+/* Layout */
+
+.mobile-nav-btn {
+	z-index: 999;
+	// display: none;
+}
+
+// @media (max-width: 1000px) {
+// 	.mobile-nav-btn {
+// 		display: block;
+// 	}
+// }
