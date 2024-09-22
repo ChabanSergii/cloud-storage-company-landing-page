@@ -107,6 +107,7 @@ body {
 /* Header */
 .header-container {
     margin-bottom: 0;
+    padding: 15px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -128,6 +129,7 @@ body {
 
 .header__select {
     border: none transparent;
+    background: transparent;
 }
 
 /* Hero */
@@ -248,7 +250,7 @@ body {
 
 .security__info,
 .security__img {
-    flex: 1 1 49%;
+    flex: 1 1 45%;
 }
 
 .security__img-inner {
@@ -850,44 +852,7 @@ body {
     padding: 11px 40px;
 }
 
-.mobile-nav {
-    position: fixed;
-    top: 0;
-    top: -100%;
-    width: 100%;
-    height: 100%;
-    z-index: 99;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-
-    background-color: var(--main_color);
-    transition: all 0.2s ease-in;
-}
-
-.mobile-nav--open {
-    top: 0;
-}
-
-.mobile-nav a {
-    color: var(--btn-fill_text-color);
-}
-
-.mobile-nav__list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 20px;
-    font-size: 28px;
-}
-
-.mobile-nav__list .active {
-    opacity: 0.5;
-}
 
 /* Nac Icon */
 
@@ -900,7 +865,7 @@ body {
     height: calc(var(--line-height) * 3 + var(--spacing) * 2);
     width: var(--width);
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     border: none;
@@ -966,4 +931,49 @@ body {
 
 .no-scroll {
     overflow-y: hidden;
+}
+
+@media (max-width: 720px) {
+    .mobile-nav-btn {
+        display: flex;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        top: -100%;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    
+        background-color: var(--main_color);
+        transition: all 0.2s ease-in;
+    }
+    
+    .mobile-nav--open {
+        top: 0;
+    }
+    
+    .mobile-nav a {
+        color: var(--btn-fill_text-color);
+    }
+    
+    .mobile-nav__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        font-size: 28px;
+    }
+    
+    .mobile-nav__list .active {
+        opacity: 0.5;
+    }
 }
