@@ -61,3 +61,7 @@ address {
 *:focus {
     outline: 3px solid var(--main_color);
 }
+
+select {
+    cursor: pointer;
+}

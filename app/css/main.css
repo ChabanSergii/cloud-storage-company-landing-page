@@ -1,10 +1,11 @@
-@import "../../node_modules/normalize.css/normalize.css";
+@import "./block/normalize.css";
+@import "./block/bootstrap.css";
 @import "./text.css";
 @import "./block/base.css";
 @import "./block/buttons.css";
 @import "./block/sprite.css";
 @import "./block/two_blocks.css";
-@import "block/two_blocks_with_list.css";
+@import "./block/two_blocks_with_list.css";
 
 :root {
     --main_color: rgba(254, 156, 105, 1);
@@ -41,6 +42,7 @@
 
 body {
     position: relative;
+    background-color: transparent;
 }
 
 .container {
@@ -658,7 +660,7 @@ body {
     padding: 11px 40px;
     font-size: 21px;
     font-family: 'Poppins-Regular', sans-serif;
-    transform: translateY(3px);
+    transform: translateY(7px);
 }
 
 /* Unlimited */
@@ -806,6 +808,10 @@ body {
     z-index: -1;
 }
 
+.contacts {
+    margin-bottom: 0;
+}
+
 .contacts__tel,
 .contacts__mail {
     margin-left: 36px;
@@ -850,6 +856,20 @@ body {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 11px 40px;
+    color: var(--btn-fill_text-color);
+}
+
+.mail__btn {
+    height: 41px;
+    /* width: 210px; */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 11px 40px;
+    font-size: 21px;
+    font-family: 'Poppins-Bold', sans-serif;
+    transform: translateY(4px);
+    font-size: 14px;
+    line-height: 1;
 }
 
 

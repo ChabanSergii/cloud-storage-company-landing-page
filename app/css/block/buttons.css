@@ -17,6 +17,12 @@
     font-family: 'Poppins-Bold';
 }
 
+.btn:hover {
+    color: var(--btn_text-color);
+    background-color: var(--main_color);
+    color: white;
+}
+
 .btn-fill {
     padding: 5px 19px;
     border-radius: var(--btn_border-radius);

@@ -24,19 +24,19 @@
             <nav class="header__nav mobile-nav">
                 <ul class="header__list mobile-nav__list">
                     <li class="header__item active">
-                        <select name="home" id="home" class="header__select">
-                            <option value="home" class="header__option">Home</option>
-                            <option value="home" class="header__option">We&#160;are</option>
-                            <option value="home" class="header__option">Quick</option>
-                            <option value="home" class="header__option">Share</option>
+                        <select name="home" id="home" class="form-select">
+                            <option selected="" class="header__option">Home</option>
+                            <option value="we-are" class="header__option">We&#160;are</option>
+                            <option value="quick" class="header__option">Quick</option>
+                            <option value="share" class="header__option">Share</option>
                         </select>
                     </li>
                     <li class="header__item">
-                        <select name="about" id="about" class="header__select">
-                            <option value="about" class="header__option">About</option>
-                            <option value="about" class="header__option">Album</option>
-                            <option value="about" class="header__option">Works</option>
-                            <option value="about" class="header__option">Staff</option>
+                        <select name="about" id="about" class="form-select"> <!-- class="header__select" -->
+                            <option selected="selected" class="header__option">About</option>
+                            <option value="album" class="header__option">Album</option>
+                            <option value="works" class="header__option">Works</option>
+                            <option value="staff" class="header__option">Staff</option>
                         </select>
                     </li>
                     <li class="header__item">
@@ -644,9 +644,9 @@
                     </a>
                 </div>
                 <div class="footer__form">
-                    <form action="#" method="post" class="form__email">
-                        <input type="email" name="email" class="footer__input" autocomplete="off" required placeholder="Your email here...">
-                        <button type="submit" class="btn-fill footer__btn">Subscribe</button>
+                    <form action="#!" method="post" class="form__email">
+                        <input type="email" name="email" class="footer__input" autocomplete="off" required placeholder="Ask your question here...">
+                        <button type="button" class="btn-fill mail__btn">Search</button>
                     </form>
                 </div>
             </div>
@@ -692,6 +692,6 @@
             <div class="copyright__background"></div>
         </div>
     </footer>
-    <script src="./js/index.bundle.js"></script>
+    <script src="./js/bootstrapMin.bundle.js"></script>
 </body>
 </html>

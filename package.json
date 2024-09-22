@@ -63,5 +63,8 @@
     "style-loader": "4.0.0",
     "webpack": "5.94.0",
     "webpack-stream": "7.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
   }
 }
