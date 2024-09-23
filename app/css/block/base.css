@@ -58,8 +58,9 @@ address {
     font-style: normal;
 }
 
-*:focus {
+*:focus-visible {
     outline: 3px solid var(--main_color);
+    /* outline-offset: 3px; */
 }
 
 select {

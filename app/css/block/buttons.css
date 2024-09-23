@@ -17,6 +17,11 @@
     font-family: 'Poppins-Bold';
 }
 
+.btn:focus {
+    border: 3px solid var(--btn_background-color);
+    background-color: var(--main_color);
+}
+
 .btn:hover {
     color: var(--btn_text-color);
     background-color: var(--main_color);
