@@ -254,6 +254,10 @@ body {
     flex: 1 1 45%;
 }
 
+.security__img {
+    margin-right: 60px;
+}
+
 .security__img-inner {
     max-width: 501px;
 }
@@ -287,11 +291,16 @@ body {
     padding: 116px 69px 146px;
     display: flex;
     align-items: center;
+    gap: 0 60px;
 }
 
 .work__info,
 .work__img {
     flex: 1 1 49%;
+}
+
+.work__info {
+    max-width: 460px;
 }
 
 .work__img-inner {
@@ -347,6 +356,8 @@ body {
 
 .work__title-description {
     color: var(--text_light-color);
+    /* max-width: 395px; */
+    margin-right: auto;
 }
 
 /* Commands */
@@ -362,7 +373,7 @@ body {
 }
 
 .commands__info {
-    padding-left: 114px;
+    padding-left: 60px;
 }
 
 .commands__img-inner {
@@ -555,12 +566,14 @@ body {
 }
 
 .features__info {
-    padding: 63px 156px 66px 155px;
+    max-width: 100%;
+    padding: 63px;
     box-shadow: 15px 15px 26px 0px #DD8762;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
-    gap: 100px;
+    /* flex-wrap: wrap; */
+    gap: 0 80px;
     color: var(--text_dark-color);
     font-family: 'Poppins-SemiBold', sans-serif;
     line-height: normal;
@@ -585,6 +598,7 @@ body {
 }
 
 .features__text-small {
+    max-width: 157px;
     font-size: 14.6px;
     letter-spacing: 0.15px;
 }
@@ -674,6 +688,10 @@ body {
     flex: 1 1 49%;
 }
 
+.unlimited__img {
+    margin-right: 60px;
+}
+
 .unlimited__img-inner {
     max-width: 430px;
 }
@@ -726,20 +744,21 @@ body {
     line-height: 146.7%;
 }
 
-
 /* Footer */
 .footer__container {
     padding-left: 160px;
     padding-right: 151px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer__top {
     display: flex;
+    justify-content: space-between;
 }
 
 .footer__logo {
     max-width: 383px;
-    padding-right: 25px;
     display: inline-block;
 }
 
@@ -749,7 +768,6 @@ body {
 
 .footer__description {
     width: 300px;
-    padding-right: 30px;
     margin-bottom: 17px;
     line-height: 153%;
 }   
@@ -758,7 +776,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
+    gap: 46px 60px;
+}
+
+.footer__item-main {
+    color: #393939;
+    font-family: 'Poppins-Medium', sans-serif;
+    font-size: 14px;
+    line-height: 153%;
 }
 
 .footer__title {
@@ -773,7 +798,7 @@ body {
     color: var(--text-description_dark-color);
     font-family: 'Poppins-Regular', sans-serif;
     font-size: 14;
-    line-height: 153%; /* 21.752px */
+    line-height: 153%;
 }
 
 .footer__bottom {
@@ -860,7 +885,6 @@ body {
 
 .mail__btn {
     height: 41px;
-    /* width: 210px; */
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     padding: 11px 40px;
@@ -871,19 +895,10 @@ body {
     line-height: 1;
 }
 
-
-
-/* Nac Icon */
-
+/* Nav Icon */
 .mobile-nav-btn {
-    /* Fixed height and width */
-    /* height: var(--height); */
-    /* width: var(--width); */
-    
-    /* Dynamic height and width */
     height: calc(var(--line-height) * 3 + var(--spacing) * 2);
     width: var(--width);
-
     display: none;
     justify-content: center;
     align-items: center;
@@ -903,13 +918,10 @@ body {
 .nav-icon::after {
     content: '';
     display: block;
-
     position: absolute;
     left: 0;
-
     width: var(--width);
     height: var(--line-height);
-
     border-radius: var(--radius);
     background-color: var(--text_light-color);
     transition: transform var(--time) ease-in,
@@ -945,14 +957,22 @@ body {
 
 .mobile-nav-btn {
 	z-index: 999;
-	/* display: none; */
 }
 
 .no-scroll {
     overflow-y: hidden;
 }
 
+@media (max-width: 1120px) {
+    .footer__container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 720px) {
+    /* Header 720px */
     .mobile-nav-btn {
         display: flex;
     }
@@ -986,7 +1006,6 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-       /*  justify-content: flex-start; */
         row-gap: 20px;
         font-size: 28px;
     }
@@ -994,8 +1013,4 @@ body {
     .header__item {
         text-align: left;
     }
-    
-    /* .mobile-nav__list .active:hover {
-        opacity: 0.5;
-    } */
 }
