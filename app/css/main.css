@@ -210,18 +210,16 @@ body {
 
 /* Advantages */
 .advantages__list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 62px;
 }
 
 .advantages__item {
     margin-bottom: 0;
     padding: 43px 37px 40px;
     max-width: 363px;
-    margin-bottom: 62px;
-    align-self: stretch;
+    align-items: stretch;
 }
 
 .advantages__title {
