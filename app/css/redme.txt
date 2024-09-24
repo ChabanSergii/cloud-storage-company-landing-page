@@ -1,2 +1,3 @@
 import example:
-    - @import "block/text.css";
+    - @import "./block/text.css";
+    - @import "./block/*.css";

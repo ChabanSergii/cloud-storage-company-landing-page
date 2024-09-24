@@ -217,6 +217,7 @@ body {
 }
 
 .advantages__item {
+    margin-bottom: 0;
     padding: 43px 37px 40px;
     max-width: 363px;
     margin-bottom: 62px;
