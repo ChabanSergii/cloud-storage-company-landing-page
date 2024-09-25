@@ -84,8 +84,19 @@
     color: var(--text_light-color);
     font-family: 'Poppins-Bold', sans-serif;
     font-size: 42px;
-    line-height: 126%; /* 52.92px */    
+    line-height: 126%;    
 }
+
+/* @media (max-width: 800px) {
+    .title-dark,
+    .title {
+        margin-bottom: 12px;
+        color: var(--text_light-color);
+        font-family: 'Poppins-Bold', sans-serif;
+        font-size: 32px;
+        line-height: 100%;  
+    }
+} */
 
 .title-dark {
     color: var(--text_dark-color);
