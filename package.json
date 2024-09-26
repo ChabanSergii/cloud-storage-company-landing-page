@@ -2,7 +2,7 @@
   "name": "cloud-storage-company-landing-page",
   "version": "1.0.0",
   "main": "index.js",
-  "homepage": "https://ChabChabik.github.io/",
+  "homepage": "https://chabser.github.io/",
   "scripts": {
     "start": "gulp",
     "build": "gulp --production",
