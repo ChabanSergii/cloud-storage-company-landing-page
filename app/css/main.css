@@ -182,7 +182,7 @@ body {
     color: var(--text_light-color);
     font-family: 'Poppins-Bold', sans-serif;
     font-size: 14px;
-    line-height: 146.687%; /* 20.725px */
+    line-height: 146.6%;
 }
 
 .svg-LearnMoreicon-dims {
@@ -194,7 +194,7 @@ body {
     color: var(--text_light-color);
     font-family: 'Poppins-Bold', sans-serif;
     font-size: 12;
-    line-height: 187%; /* 23.399px */
+    line-height: 187%;
 }
 
 .hero__offers-inner:first-child {
@@ -206,7 +206,7 @@ body {
     position: relative;
     font-family: 'Roboto-Bold';
     font-size: 14px;
-    line-height: 146.687%;
+    line-height: 146%;
 }
 
 .hero__img-inner {
@@ -646,20 +646,19 @@ body {
     color: var(--text-description_dark-color);
     font-family: 'Poppins-Medium', sans-serif;
     font-size: 16.67px;
-    line-height: 126%; /* 21.004px */
+    line-height: 126%;
     letter-spacing: 0.5px;
 }
 
 .questions__form {
     text-align: center;
-    max-width: 1041px;
     text-wrap: nowrap;
-    transform: translateX(-91px);
+    /* transform: translateX(-91px); */
 }
 
 .questions__input {
     height: 62px;
-    width: 100%;
+    width: 80%;
     padding: 13px 17px;
     border-radius: 16px 0 0 16px;
     border: 0.331px solid var(--social_background-color);
@@ -672,7 +671,7 @@ body {
 
 .questions__btn {
     height: 62px;
-    width: 210px;
+    max-width: 210px;
     border-radius: 0 16px 16px 0;
     padding: 11px 40px;
     font-size: 21px;
@@ -977,6 +976,11 @@ body {
 }
 
 @media (max-width: 1001px) {
+    /* Hero */
+    .hero__container {
+        padding: 43px 69px 36px 56px;
+    }
+
     /* Features 1001px */
     .features__info {
         margin-bottom: 50px;
@@ -999,6 +1003,12 @@ body {
 }
 
 @media (max-width: 932px) {
+    /* Question 932px */
+    .questions__container {
+        padding: 0 68px;
+    }
+
+    /* Footer 932px */
     .footer__top {
         display: block;
         margin-bottom: 20px;
@@ -1030,10 +1040,14 @@ body {
     .footer__form {
         text-align: center;
     }
+
+    .contacts {
+        text-align: end;
+    }
 }
 
-@media (max-width: 720px) {
-    /* Header 720px */
+@media (max-width: 804px) {
+    /* Header 804px */
     .mobile-nav-btn {
         display: flex;
     }
@@ -1073,5 +1087,126 @@ body {
 
     .header__item {
         text-align: left;
+    }
+
+    /* Advantages804px */
+    .advantages__list {
+        grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+        gap: 32px;
+    }
+}
+
+@media (max-width: 790px) {
+    .hero__container,
+    .share__container,
+    .send__container,
+    .security__content,
+    .work__container,
+    .commands__container,
+    .keep__container,
+    .userdata__container,
+    .unlimited__container {
+        display: block;
+        text-align: center;
+    }
+
+    .container {
+        margin-bottom: 60px;
+    }
+
+    /* Header 790px */
+    .header-container {
+        margin-bottom: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        justify-content: space-between;
+    }
+
+    /* Hero 790px */
+    .hero__container {
+        padding-top: 0;
+        margin-bottom: 170px;
+    }
+
+    .text__description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero__offers {
+        display: block;
+    }
+
+    .hero__learn {
+        justify-content: center;
+    }
+
+    .hero__offers > * {
+        display: inline;
+    }
+
+    .hero__img {
+        margin-top: 20px;
+    }
+
+    /* Send 790px */
+    .send__container {
+        padding: 65px 108px;
+        text-wrap: balance;
+    }
+
+    .send__item {
+        margin-top: 80px;
+    }
+
+    .send__item::before,
+    .send__item:nth-child(2)::before,
+    .send__item:last-child::before {
+        background-position: center;
+        left: 250px;
+        top: -60px;
+        position: absolute;
+    }
+
+    /* Work 790px */
+    .work__item,
+    .work__info {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Commands 790px */
+    .commands__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .commands__info {
+        order: -1;
+        padding-right: 60px;
+        margin-bottom: 20px;
+    }
+
+    .commands__buttons {
+        justify-content: center;
+    }
+
+    /* Unlimited 790px */
+    .unlimited__offers,
+    .unlimited__buttons {
+        justify-content: center;
+    }
+
+    /* Footer 790px */
+    .footer__bottom {
+        margin-bottom: 23px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__form {
+        order: -1;
+        margin-bottom: 20px;
     }
 }
