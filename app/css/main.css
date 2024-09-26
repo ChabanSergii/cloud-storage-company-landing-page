@@ -440,7 +440,7 @@ body {
 
 .keep__text,
 .keep__title-description {
-    width: 449px;
+    max-width: 449px;
     margin-left: 0;
     margin-bottom: 13px;
     color: var(--text-description_light-color);
@@ -555,7 +555,7 @@ body {
 }
 
 .features_title-main {
-    width: 641px;
+    max-width: 641px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -564,6 +564,8 @@ body {
     max-width: 521px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 39px;
+    padding-right: 39px;
 }
 
 .features__title-description {
@@ -637,7 +639,7 @@ body {
     color: var(--text_dark-color);
     font-family: 'Poppins-Bold', sans-serif;
     font-size: 18px;
-    line-height: 148.2%; /* 26.641px */
+    line-height: 148%;
 }
 
 .questions__description {
@@ -653,7 +655,10 @@ body {
 .questions__form {
     text-align: center;
     text-wrap: nowrap;
-    /* transform: translateX(-91px); */
+}
+
+.questions__input:focus ~ * {
+    outline: 3px solid var(--main_color);
 }
 
 .questions__input {
@@ -780,6 +785,8 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 46px 60px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .footer__item-main {
@@ -867,10 +874,14 @@ body {
 
 .footer__input {
     height: 41px;
-    width: 443px;
+    max-width: 443px;
     padding: 13px 17px;
     border-radius: 8px 0 0 8px;
     border: 0.331px solid var(--social_background-color);
+}
+
+.footer__input:focus ~ * {
+    outline: 2px solid var(--main_color);
 }
 
 .footer__input::placeholder {
@@ -970,8 +981,8 @@ body {
 @media (max-width: 1120px) {
     .footer__container {
         margin: 0 auto;
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -1061,6 +1072,7 @@ body {
         width: 100%;
         height: 100%;
         z-index: 99;
+        left: 0;
     
         display: block;
         text-align: left;
@@ -1087,6 +1099,14 @@ body {
 
     .header__item {
         text-align: left;
+    }
+
+    .form-select {
+        padding: 0;
+    }
+    .header__link.btn {
+        padding: 0;
+        border: none;
     }
 
     /* Advantages804px */
@@ -1131,6 +1151,7 @@ body {
     .text__description {
         margin-left: auto;
         margin-right: auto;
+        padding: 0;
     }
 
     .hero__offers {
@@ -1208,5 +1229,93 @@ body {
     .footer__form {
         order: -1;
         margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 597px) {
+    .footer__list-main {
+        gap: 46px 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 585px) {
+    .mobile-nav__list {
+        align-items: flex-start;
+        row-gap: 20px;
+        font-size: 33px;
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 426px) {
+    /* Hero 426px */
+    .hero__container {
+        margin-bottom: 150px;
+        padding: 43px 39px;
+    }
+    
+    .questions__container,
+    .userdata__container,
+    .action__container,
+    .share__container {
+        padding: 0 39px;
+    }
+
+    .commands__container,
+    .security__container,
+    .send__container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .text__title-description,
+    .security__title-description {
+        margin-bottom: 30px;
+    }
+
+    .unlimited__container,
+    .keep__container,
+    .work__container {
+        padding: 39px;
+    }
+
+    .commands__info {
+        padding: 0;
+    }
+
+    .userdata__text {
+        padding: 0;
+    }
+
+    .action__img-inner {
+        margin-bottom: 0;
+    }
+
+    .questions__title-small,
+    .questions__description {
+        text-align: center;
+    }
+
+    .questions__input::placeholder {
+        font-style: 5px;
+    }
+
+    .questions__btn {
+        height: 62px;
+        max-width: 210px;
+        border-radius: 0 16px 16px 0;
+        padding: 11px 20px;
+        font-size: 16px;
+    }
+
+    .copyright {
+        flex-wrap: wrap;
+    }
+
+    .copyright > * {
+        margin-bottom: 10px;
     }
 }

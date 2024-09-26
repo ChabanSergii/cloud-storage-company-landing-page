@@ -87,16 +87,12 @@
     line-height: 126%;    
 }
 
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
     .title-dark,
     .title {
-        margin-bottom: 12px;
-        color: var(--text_light-color);
-        font-family: 'Poppins-Bold', sans-serif;
-        font-size: 32px;
-        line-height: 100%;  
+        font-size: 32px; 
     }
-} */
+}
 
 .title-dark {
     color: var(--text_dark-color);
