@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="Hi, there! I want to become a good frontend developer...">
     <title>COMU</title>
-    <link rel="stylesheet" href="css/main.css">
-    <!-- <link rel="favicon" type="image/png" href="./images/favicon/favicon.png"> -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="favicon" type="image/png" href="./images/favicon/favicon.ico">
 </head>
 <body>
     <div class="decor"></div>
@@ -23,29 +23,33 @@
             </button>
             <nav class="header__nav mobile-nav">
                 <ul class="header__list mobile-nav__list">
-                    <li class="header__item active">
-                        <select name="home" id="home" class="header__select">
-                            <option value="home" class="header__option">Home</option>
+                    <li class="header__item link">
+                        <select name="home" id="home" class="form-select">
+                            <option selected="" class="header__option link">Home</option>
+                            <option value="we-are" class="header__option link">We&#160;are</option>
+                            <option value="quick" class="header__option link">Quick</option>
+                            <option value="share" class="header__option link">Share</option>
                         </select>
                     </li>
-                    <li class="header__item">
-                        <select name="about" id="about" class="header__select">
-                            <option value="about" class="header__option">About</option>
+                    <li class="header__item link">
+                        <select name="about" id="about" class="form-select"> <!-- class="header__select" -->
+                            <option selected="selected" class="header__option link">About</option>
+                            <option value="album" class="header__option link">Album</option>
+                            <option value="works" class="header__option link">Works</option>
+                            <option value="staff" class="header__option link">Staff</option>
                         </select>
                     </li>
-                    <li class="header__item">
-                        <select name="auth-pagea" id="auth-pagea" class="header__select">
-                            <option value="auth-pagea" class="header__option">Auth Pagea</option>
-                        </select>
+                    <li class="header__item link">
+                        <a href="#!" class="header__link">Features</a>
+                    </li>
+                    <li class="header__item link">
+                        <a href="#!" class="header__link">Pricing</a>
+                    </li>
+                    <li class="header__item link">
+                        <a href="#!" class="header__link">Auth Page</a>
                     </li>
                     <li class="header__item">
-                        <a href="#" class="header__link">Features</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" class="header__link">Pricing</a>
-                    </li>
-                    <li class="header__item">
-                        <a href="#" role="button" class="header__link btn">Get Started</a>
+                        <a href="#!" role="button" class="header__link btn">Get Started</a>
                     </li>
                 </ul>
             </nav>
@@ -59,83 +63,53 @@
                         Share text, voice, photos, videos and GIFs files for free
                     </h2>
                     <p class="text__description hero__text">
-                        Feugiat primis a ligula undo auctor mauris auctor laoreet and pretium augue an egestas cubilia
+                        Feugiat primis a&#160;ligula undo auctor mauris auctor laoreet and pretium augue an&#160;egestas cubilia
                     </p>
                     <div class="hero__learn">
-                        <a href="#" role="button" class="btn-fill hero__btn">Learn More</a>
-                        <a href="#" role="button" class="hero__play">
+                        <a href="#!" role="button" class="btn-fill hero__btn">Learn More</a>
+                        <a href="#!" role="button" class="hero__play">
                             <img src="./images/sprite.svg#LearnMoreicon" class="svg-LearnMoreicon-dims" alt="LearnMoreicon">
-                            <small class="btn__subscribe">See OLMO in Action</small>
+                            <small class="btn__subscribe link">See OLMO in&#160;Action</small>
                         </a>
                     </div>
                     <div class="hero__offers">
                         <div class="hero__offers-inner delimiter">14 days free trial </div>
-                        <div class="hero__offers-inner">No credit card</div> 
+                        <div class="hero__offers-inner">No&#160;credit card</div>
                     </div>
                 </div>
                 <div class="hero__img">
-                    <picture><source srcset="./images/Group19.webp" type="image/webp"><img src="./images/Group19.png" alt="boy and tree" class="hero__img-inner"></picture>
+                    <picture><source srcset="./images/Group19.webp" type="image/webp"><img src="./images/Group19.png" alt="boy and tree" class="hero__img-inner" loading="lazy"></picture>
                 </div>
             </div>
         </section>
         <section class="advantages">
             <div class="container advantages__container">
-                <h2 class="text__center title-dark advantages_title-main">We&apos;re Better. Here&apos;s Why…</h2>
-                <p class="text__center text__title-description advantages__title-description">Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus, blandit and cursus varius and magnis sapien</p>
                 <ul class="advantages__list">
                     <li class="text__description text__center block advantages__item">
                         <div class="icon advantages__icon">
-                            <img src="../images/sprite.svg#icon_1_55" class="svg-icon_adventages" alt="icon_1">
+                            <img src="./images/sprite.svg#icon_1_55" class="svg-icon_adventages" alt="icon_1">
                         </div>
                         <div class="title__small advantages__title">Quick Access</div>
                         <p class="advantages__description">
-                            Feugiat primis ultrice a semper lacus cursus feugiat a primis ultrice a ligula risus auctor 
+                            Feugiat primis ultrice a&#160;semper lacus cursus feugiat a&#160;primis ultrice a&#160;ligula risus auctor
                         </p>
                     </li>
                     <li class="text__description text__center block advantages__item">
                         <div class="icon advantages__icon">
-                            <img src="../images/sprite.svg#icon_2_55" class="svg-icon_adventages" alt="icon_2_55">
+                            <img src="./images/sprite.svg#icon_2_55" class="svg-icon_adventages" alt="icon_2_55">
                         </div>
                         <div class="title__small advantages__title">Cross-Platform</div>
                         <p class="advantages__description">
-                            Feugiat primis ultrice a semper lacus cursus feugiat a primis ultrice a ligula risus auctor 
+                            Feugiat primis ultrice a&#160;semper lacus cursus feugiat a&#160;primis ultrice a&#160;ligula risus auctor
                         </p>
                     </li>
                     <li class="text__description text__center block advantages__item">
                         <div class="icon advantages__icon">
-                            <img src="../images/sprite.svg#icon_3_55" class="svg-icon_adventages" alt="icon_3_55">
+                            <img src="./images/sprite.svg#icon_3_55" class="svg-icon_adventages" alt="icon_3_55">
                         </div>
                         <div class="title__small advantages__title">Easy Integration</div>
                         <p class="advantages__description">
-                            Feugiat primis ultrice a semper lacus cursus feugiat a primis ultrice a ligula risus auctor 
-                        </p>
-                    </li>
-                    
-                    <li class="text__description text__center block advantages__item">
-                        <div class="icon advantages__icon">
-                            <img src="../images/sprite.svg#icon_4" class="svg-icon_adventages" alt="icon_4">
-                        </div>
-                        <div class="title__small advantages__title">Friendly Interface</div>
-                        <p class="advantages__description">
-                            Feugiat primis ultrice semper lacus cursus feugiat undo primis ultrice a ligula an auctor tempus magnis 
-                        </p>
-                    </li>
-                    <li class="text__description text__center block advantages__item">
-                        <div class="icon advantages__icon">
-                            <img src="../images/sprite.svg#icon_5" class="svg-icon_adventages" alt="icon_1_55">
-                        </div>
-                        <div class="title__small advantages__title">Extremely Flexible</div>
-                        <p class="advantages__description">
-                            Feugiat primis ultrice semper lacus cursus feugiat undo primis ultrice a ligula an auctor tempus magnis 
-                        </p>
-                    </li>
-                    <li class="text__description text__center block advantages__item">
-                        <div class="icon advantages__icon">
-                            <img src="../images/sprite.svg#icon_6" class="svg-icon_adventages" alt="icon_1_55">
-                        </div>
-                        <div class="title__small advantages__title">Strong Encryption</div>
-                        <p class="advantages__description">
-                            Feugiat primis ultrice a semper lacus cursus feugiat a primis ultrice a ligula risus auctor 
+                            Feugiat primis ultrice a&#160;semper lacus cursus feugiat a&#160;primis ultrice a&#160;ligula risus auctor
                         </p>
                     </li>
                 </ul>
@@ -144,17 +118,17 @@
         <section class="share">
             <div class="container share__container">
                 <div class="share__img">
-                    <picture><source srcset="./images/Group1684.webp" type="image/webp"><img src="./images/Group1684.png" alt="girl" class="share__img-inner"></picture>
+                    <picture><source srcset="./images/Group1684.webp" type="image/webp"><img src="./images/Group1684.png" alt="girl" class="share__img-inner" loading="lazy"></picture>
                 </div>
                 <div class="share__info">
                     <h2 class="title share__title">
                         Share files, media, and locations
                     </h2>
                     <p class="text__description share__tetx">
-                        Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
+                        Quaerat sodales sapien euismod blandit purus a&#160;purus ipsum primis in&#160;cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
                     </p>
                     <p class="text__description share__tetx">
-                        Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
+                        Quaerat sodales sapien euismod blandit purus a&#160;purus ipsum primis in&#160;cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
                     </p>
                 </div>
             </div>
@@ -184,7 +158,7 @@
                     </ul>
                 </div>
                 <div class="send__img">
-                    <picture><source srcset="./images/Group1565.webp" type="image/webp"><img src="./images/Group1565.png" alt="girl" class="send__img-inner"></picture>
+                    <picture><source srcset="./images/Group1565.webp" type="image/webp"><img src="./images/Group1565.png" alt="girl" class="send__img-inner" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -194,11 +168,11 @@
                     Security, Simplicity, Easiness
                 </h2>
                 <p class="text__center text__title-description security__title-description">
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus, blandit and cursus varius and magnis sapien
+                    Aliquam a&#160;augue suscipit, luctus neque purus ipsum neque dolor primis a&#160;libero tempus, blandit and cursus varius and magnis sapien
                 </p>
-                <div class="security__contant">
+                <div class="security__content">
                     <div class="security__img">
-                        <picture><source srcset="./images/Group-19.webp" type="image/webp"><img src="./images/Group-19.png" alt="girl" class="security__img-inner"></picture>
+                        <picture><source srcset="./images/Group-19.webp" type="image/webp"><img src="./images/Group-19.png" alt="girl" class="security__img-inner" loading="lazy"></picture>
                     </div>
                     <div class="security__info">
                         <div class="security__pat">
@@ -206,7 +180,7 @@
                                 Share files, media, and locations
                             </h4>
                             <p class="text__description security__text">
-                                Quaerat sodales sapien euismod blandit at vitae ipsum primis undo and cubilia laoreet augue and luctus magna dolor luctus at egestas sapien vitae nemo egestas volute and turpis dolores aliquam quaerat sodales a sapien                
+                                Quaerat sodales sapien euismod blandit at&#160;vitae ipsum primis undo and cubilia laoreet augue and luctus magna dolor luctus at&#160;egestas sapien vitae nemo egestas volute and turpis dolores aliquam quaerat sodales a&#160;sapien
                             </p>
                         </div>
                         <div class="security__pat">
@@ -214,18 +188,18 @@
                                 Advanced performance made easy
                             </h4>
                             <p class="text__description security__text">
-                                Fringilla risus, luctus mauris auctor euismod an iaculis luctus magna purus pretium ligula purus and quaerat
+                                Fringilla risus, luctus mauris auctor euismod an&#160;iaculis luctus magna purus pretium ligula purus and quaerat
                             </p>
                             <p class="text__description security__text">
-                                Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at sodales sapien purus                
+                                Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at&#160;sodales sapien purus
                             </p>
                         </div>
                         <div class="shop">
                             <a href="#" class="shop-inner">
-                                <picture><source srcset="./images/app-store.webp" type="image/webp"><img src="./images/app-store.png" alt="app-store" class="store"></picture>
+                                <picture><source srcset="./images/app-store.webp" type="image/webp"><img src="./images/app-store.png" alt="app-store" class="store" loading="lazy"></picture>
                             </a>
                             <a href="#" class="shop-inner">
-                                <picture><source srcset="./images/google-play.webp" type="image/webp"><img src="./images/google-play.png" alt="app-store" class="store"></picture>
+                                <picture><source srcset="./images/google-play.webp" type="image/webp"><img src="./images/google-play.png" alt="app-store" class="store" loading="lazy"></picture>
                             </a>
                         </div>
                     </div>
@@ -239,12 +213,12 @@
                         Work smarter with powerful automation
                     </h2>
                     <p class="text__title-description work__title-description">
-                        Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute                    
+                        Quaerat sodales sapien euismod blandit purus a&#160;purus ipsum primis in&#160;cubilia laoreet augue luctus magna dolor luctus and egestas sapien egestas vitae nemo volute
                     </p>
                     <div class="work__item">
                         <h4 class="work__title">Send Group Messages</h4>
                         <p class="text__description work__text">
-                            to your lists of contacts
+                            to&#160;your lists of&#160;contacts
                         </p>
                     </div>
                     <div class="work__item">
@@ -255,7 +229,7 @@
                     </div>
                 </div>
                 <div class="work__img">
-                    <picture><source srcset="./images/Group1687.webp" type="image/webp"><img src="./images/Group1687.png" alt="girl" class="work__img-inner"></picture>
+                    <picture><source srcset="./images/Group1687.webp" type="image/webp"><img src="./images/Group1687.png" alt="girl" class="work__img-inner" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -263,26 +237,26 @@
         <section class="commands">
             <div class="container commands__container">
                 <div class="commands__img">
-                    <picture><source srcset="./images/Group1692.webp" type="image/webp"><img src="./images/Group1692.png" alt="girl" class="commands__img-inner"></picture>
+                    <picture><source srcset="./images/Group1692.webp" type="image/webp"><img src="./images/Group1692.png" alt="girl" class="commands__img-inner" loading="lazy"></picture>
                 </div>
                 <div class="commands__info">
                     <h2 class="title-dark commands__title-main">
-                        Make it simpler with Quick Commands
+                        Make it&#160;simpler with Quick Commands
                     </h2>
                     <p class="text__title-description commands__title-description">
-                        Fringilla risus, luctus mauris orci auctor euismod iaculis luctus magna purus pretium ligula purus undo quaerat tempor sapien rutrum mauris quaerat ultrice                    
+                        Fringilla risus, luctus mauris orci auctor euismod iaculis luctus magna purus pretium ligula purus undo quaerat tempor sapien rutrum mauris quaerat ultrice
                     </p>
                     <p class="text__description commands__text">
                         Quaerat sodales sapien euismod purus blandit
                     </p>
                     <p class="text__description commands__text">
-                        Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at sodales sapien purus
+                        Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at&#160;sodales sapien purus
                     </p>
                     <div class="commands__buttons">
-                        <a href="#" role="button" class="btn-fill commands__btn">
-                            Let&apos;s Get Started
+                        <a href="#!" role="button" class="btn-fill commands__btn">
+                            Let&apos; s&#160;Get Started
                         </a>
-                        <a href="#" role="button" class="btn commands__btn">
+                        <a href="#!" role="button" class="btn commands__btn">
                             View Pricing
                         </a>
                     </div>
@@ -290,11 +264,47 @@
             </div>
         </section>
 
+        <section class="advantages">
+            <div class="container advantages__container">
+                <h2 class="text__center title-dark advantages_title-main">We&apos; re&#160;Better. Here&apos; s&#160;Why&#8230;</h2>
+                <p class="text__center text__title-description advantages__title-description">Aliquam a&#160;augue suscipit, luctus neque purus ipsum neque dolor primis a&#160;libero tempus, blandit and cursus varius and magnis sapien</p>
+                <ul class="advantages__list">
+                    <li class="text__description text__center block advantages__item">
+                        <div class="icon advantages__icon">
+                            <img src="./images/sprite.svg#icon_4" class="svg-icon_adventages" alt="icon_4">
+                        </div>
+                        <div class="title__small advantages__title">Friendly Interface</div>
+                        <p class="advantages__description">
+                            Feugiat primis ultrice semper lacus cursus feugiat undo primis ultrice a&#160;ligula an&#160;auctor tempus magnis
+                        </p>
+                    </li>
+                    <li class="text__description text__center block advantages__item">
+                        <div class="icon advantages__icon">
+                            <img src="./images/sprite.svg#icon_5" class="svg-icon_adventages" alt="icon_1_55">
+                        </div>
+                        <div class="title__small advantages__title">Extremely Flexible</div>
+                        <p class="advantages__description">
+                            Feugiat primis ultrice semper lacus cursus feugiat undo primis ultrice a&#160;ligula an&#160;auctor tempus magnis
+                        </p>
+                    </li>
+                    <li class="text__description text__center block advantages__item">
+                        <div class="icon advantages__icon">
+                            <img src="./images/sprite.svg#icon_6" class="svg-icon_adventages" alt="icon_1_55">
+                        </div>
+                        <div class="title__small advantages__title">Strong Encryption</div>
+                        <p class="advantages__description">
+                            Feugiat primis ultrice a&#160;semper lacus cursus feugiat a&#160;primis ultrice a&#160;ligula risus auctor
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
         <section class="keep">
             <div class="container keep__container block_big">
                 <div class="keep__info">
                     <h2 class="title keep__title-main">
-                        Keep your favorite people close to you
+                        Keep your favorite people close to&#160;you
                     </h2>
                     <p class="text__title-description keep__title-description">
                         Fringilla risus, luctus mauris orci auctor euismod iaculis luctus magna purus pretium ligula purus undo quaerat tempor sapien rutrum mauris quaerat ultrice
@@ -303,11 +313,11 @@
                         Quaerat sodales sapien euismod purus blandit
                     </p>
                     <p class="text__description keep__text">
-                        Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at sodales sapien purus                
+                        Nemo ipsam egestas volute turpis dolores undo ultrice aliquam quaerat at&#160;sodales sapien purus
                     </p>
                 </div>
                 <div class="keep__img">
-                    <picture><source srcset="./images/Group1686.webp" type="image/webp"><img src="./images/Group1686.png" alt="girl" class="work__img-inner"></picture>
+                    <picture><source srcset="./images/Group1686.webp" type="image/webp"><img src="./images/Group1686.png" alt="girl" class="work__img-inner" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -318,15 +328,15 @@
                     Share Moments. Share Life.
                 </h2>
                 <p class="text__center text__title-description action__title-description">
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus, blandit and cursus varius and magnis sapien
+                    Aliquam a&#160;augue suscipit, luctus neque purus ipsum neque dolor primis a&#160;libero tempus, blandit and cursus varius and magnis sapien
                 </p>
                 <div class="action__img">
-                    <picture><source srcset="../images/Group1688.webp" type="image/webp"><img src="../images/Group1688.png" alt="share life" class="action__img-inner"></picture>
+                    <picture><source srcset="./images/Group1688.webp" type="image/webp"><img src="./images/Group1688.png" alt="share life" class="action__img-inner" loading="lazy"></picture>
                 </div>
                 <div class="text__center action__info">
                     <div class="action__learn">
-                        <a href="#" role="button" class="btn-fill action__btn">
-                            See OLMO in Action
+                        <a href="#!" role="button" class="btn-fill action__btn">
+                            See OLMO in&#160;Action
                         </a>
                     </div>
                     <div class="action__offers">
@@ -337,8 +347,8 @@
                             Exclusive Support
                         </div>
                         <div class="action__offers-inner">
-                            No credit card
-                        </div> 
+                            No&#160;credit card
+                        </div>
                     </div>
                 </div>
             </div>
@@ -350,10 +360,10 @@
                     Stories From Our Customers
                 </h2>
                 <p class="text__center text__title-description customers__title-description">
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus, blandit and cursus varius and magnis sapien
+                    Aliquam a&#160;augue suscipit, luctus neque purus ipsum neque dolor primis a&#160;libero tempus, blandit and cursus varius and magnis sapien
                 </p>
                 <div class="customers__img">
-                    <picture><source srcset="../images/Group1658.webp" type="image/webp"><img src="../images/Group1658.png" alt="share life" class="action__img-inner"></picture>
+                    <picture><source srcset="./images/Group1658.webp" type="image/webp"><img src="./images/Group1658.png" alt="share life" class="action__img-inner" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -365,25 +375,25 @@
                         Share files, media, and locations
                     </h2>
                     <p class="text__description userdata__text">
-                        Aliqum mullam blandit tempor sapien gravida at donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
+                        Aliqum mullam blandit tempor sapien gravida at&#160;donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
                     </p>
                     <p class="text__description userdata__text">
-                        Aliqum mullam blandit tempor sapien gravida at donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
+                        Aliqum mullam blandit tempor sapien gravida at&#160;donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
                     </p>
                     <p class="text__description userdata__text">
-                        Aliqum mullam blandit tempor sapien gravida at donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
+                        Aliqum mullam blandit tempor sapien gravida at&#160;donec ipsum porta justo. Velna vitae auctor and congue magna impedit luctus dolor volute
                     </p>
                     <div class="shop">
-                        <a href="#" class="shop-inner">
-                            <picture><source srcset="./images/app-store.webp" type="image/webp"><img src="./images/app-store.png" alt="app-store" class="store"></picture>
+                        <a href="#!" class="shop-inner">
+                            <picture><source srcset="./images/app-store.webp" type="image/webp"><img src="./images/app-store.png" alt="app-store" class="store" loading="lazy"></picture>
                         </a>
-                        <a href="#" class="shop-inner">
-                            <picture><source srcset="./images/google-play.webp" type="image/webp"><img src="./images/google-play.png" alt="app-store" class="store"></picture>
+                        <a href="#!" class="shop-inner">
+                            <picture><source srcset="./images/google-play.webp" type="image/webp"><img src="./images/google-play.png" alt="app-store" class="store" loading="lazy"></picture>
                         </a>
                     </div>
                 </div>
                 <div class="userdata__img">
-                    <picture><source srcset="./images/Group1689.webp" type="image/webp"><img src="./images/Group1689.png" alt="user anonymous" class="userdata__img-inner"></picture>
+                    <picture><source srcset="./images/Group1689.webp" type="image/webp"><img src="./images/Group1689.png" alt="user anonymous" class="userdata__img-inner" loading="lazy"></picture>
                 </div>
             </div>
         </section>
@@ -391,10 +401,10 @@
         <section class="features">
             <div class="container features__container">
                 <h2 class="text__center title-dark features_title-main">
-                    Discover powerful features to boost your productivity
+                    Discover powerful features to&#160;boost your productivity
                 </h2>
                 <div class="features__img">
-                    <picture><source srcset="../images/Group1690.webp" type="image/webp"><img src="../images/Group1690.png" alt="share life" class="features__img-inner"></picture>
+                    <picture><source srcset="./images/Group1690.webp" type="image/webp"><img src="./images/Group1690.png" alt="share life" class="features__img-inner" loading="lazy"></picture>
                 </div>
                 <div class="block_big features__info">
                     <div class="features__description">
@@ -413,11 +423,11 @@
                             4.86
                         </div>
                         <div class="features__stars">
-                            <img src="../images/sprite.svg#Star" class="svg-Star-dims" alt="five stars">
-                            <img src="../images/sprite.svg#Star" class="svg-Star-dims" alt="">
-                            <img src="../images/sprite.svg#Star" class="svg-Star-dims" alt="">
-                            <img src="../images/sprite.svg#Star" class="svg-Star-dims" alt="">
-                            <img src="../images/sprite.svg#Star" class="svg-Star-dims" alt="">
+                            <img src="./images/sprite.svg#Star" class="svg-Star-dims" alt="five stars">
+                            <img src="./images/sprite.svg#Star" class="svg-Star-dims" alt="">
+                            <img src="./images/sprite.svg#Star" class="svg-Star-dims" alt="">
+                            <img src="./images/sprite.svg#Star" class="svg-Star-dims" alt="">
+                            <img src="./images/sprite.svg#Star" class="svg-Star-dims" alt="">
                         </div>
                         <div class="features__text-small">8,376 Rating</div>
                     </div>
@@ -431,62 +441,62 @@
                     Got Questions? Look Here
                 </h2>
                 <p class="text__center text__title-description questions__title-description">
-                    Aliquam a augue suscipit, luctus neque purus ipsum neque dolor primis a libero tempus, blandit and cursus varius and magnis sapien
+                    Aliquam a&#160;augue suscipit, luctus neque purus ipsum neque dolor primis a&#160;libero tempus, blandit and cursus varius and magnis sapien
                 </p>
                 <ul class="questions__list">
                     <li class="questions_item">
                         <article class="questions__block">
-                            <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
+                            <h4 class="questions__title-small">Can I&#160;see OLMO in&#160;action before purchasing?</h4>
                             <p class="questions__description">
-                                Etiam amet mauris suscipit in odio integer congue metus vitae arcu mollis blandit ultrices ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
+                                Etiam amet mauris suscipit in&#160;odio integer congue metus vitae arcu mollis blandit ultrices ligula egestas and magna suscipit lectus magna suscipit luctus blandit vitae
                             </p>
                         </article>
                     </li>
                     <li class="questions_item">
                         <article class="questions__block">
-                            <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
+                            <h4 class="questions__title-small">Can I&#160;see OLMO in&#160;action before purchasing?</h4>
                             <p class="questions__description">
-                                An enim nullam tempor sapien gravida a donec ipsum enim an porta justo integer at velna vitae auctor integer congue undo magna at pretium purus pretium                            </p>
+                                An&#160;enim nullam tempor sapien gravida a&#160;donec ipsum enim an&#160;porta justo integer at&#160;velna vitae auctor integer congue undo magna at&#160;pretium purus pretium </p>
                         </article>
                     </li>
                     <li class="questions_item">
                         <article class="questions__block">
-                            <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
+                            <h4 class="questions__title-small">Can I&#160;see OLMO in&#160;action before purchasing?</h4>
                             <p class="questions__description">
                                 Fringilla risus, luctus mauris orci auctor purus ligula euismod pretium purus pretium rutrum tempor sapien
                             </p>
                             <p class="questions__description">
-                                Nemo ipsam egestas volute turpis dolores ut aliquam quaerat sodales sapien undo pretium a purus
+                                Nemo ipsam egestas volute turpis dolores ut&#160;aliquam quaerat sodales sapien undo pretium a&#160;purus
                             </p>
                         </article>
                     </li>
                     <li class="questions_item">
                         <article class="questions__block">
-                            <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
+                            <h4 class="questions__title-small">Can I&#160;see OLMO in&#160;action before purchasing?</h4>
                             <p class="questions__description">
-                                Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec and neque. Blandit justo aliquam molestie nunc sapien                            
+                                Cubilia laoreet augue egestas and luctus donec curabite diam vitae dapibus libero and quisque gravida donec and neque. Blandit justo aliquam molestie nunc sapien
                             </p>
                         </article>
                     </li>
                     <li class="questions_item">
                         <article class="questions__block">
-                            <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
+                            <h4 class="questions__title-small">Can I&#160;see OLMO in&#160;action before purchasing?</h4>
                             <p class="questions__description">
-                                Etiam amet mauris suscipit sit amet in odio. Integer congue leo metus. Vitae arcu mollis blandit ultrice ligula
+                                Etiam amet mauris suscipit sit amet in&#160;odio. Integer congue leo metus. Vitae arcu mollis blandit ultrice ligula
                             </p>
                             <p class="questions__description">
-                                An enim nullam tempor sapien gravida donec congue leo metus. Vitae arcu mollis blandit integer at velna                           
+                                An&#160;enim nullam tempor sapien gravida donec congue leo metus. Vitae arcu mollis blandit integer at&#160;velna
                             </p>
                         </article>
                     </li>
                     <li class="questions_item">
                         <article class="questions__block">
-                            <h4 class="questions__title-small">Can I see OLMO in action before purchasing?</h4>
+                            <h4 class="questions__title-small">Can I&#160;see OLMO in&#160;action before purchasing?</h4>
                             <p class="questions__description">
-                                Fringilla risus, luctus mauris orci auctor purus                            
+                                Fringilla risus, luctus mauris orci auctor purus
                             </p>
                             <p class="questions__description">
-                                Quaerat sodales sapien euismod blandit purus and ipsum primis in cubilia laoreet augue luctus                            
+                                Quaerat sodales sapien euismod blandit purus and ipsum primis in&#160;cubilia laoreet augue luctus
                             </p>
                         </article>
                     </li>
@@ -494,19 +504,17 @@
                 <h2 class="text__center title-dark questions__title-main">
                     Have more questions?
                 </h2>
-                <div class="questions__form">
-                    <form action="#" method="post" class="form__email">
-                        <input type="email" name="email" class="questions__input" autocomplete="off" required placeholder="Ask your question here...">
-                        <button type="submit" class="btn-fill questions__btn">Search</button>
-                    </form>
-                </div>
+                <form action="#!" method="post" class="questions__form">
+                    <input type="text" name="text" class="questions__input" autocomplete="off" required placeholder="Ask your question here...">
+                    <button type="button" class="btn-fill questions__btn">Search</button>
+                </form>
             </div>
         </section>
 
         <section class="unlimited">
             <div class="container block_big unlimited__container">
                 <div class="unlimited__img">
-                    <picture><source srcset="./images/Group1691.webp" type="image/webp"><img src="./images/Group1691.png" alt="user anonymous" class="unlimited__img-inner"></picture>
+                    <picture><source srcset="./images/Group1691.webp" type="image/webp"><img src="./images/Group1691.png" alt="user anonymous" class="unlimited__img-inner" loading="lazy"></picture>
                 </div>
                 <div class="unlimited__info">
                     <h2 class="title unlimited__title">
@@ -516,14 +524,14 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt neque eos quaerat dolorum suscipit, voluptatem error corrupti possimus eum mollitia harum fugit? Quas laudantium enim blanditiis atque, modi repudiandae praesentium
                     </p>
                     <div class="unlimited__buttons">
-                        <a href="#" role="button" class="btn-fill unlimited__btn">
-                            Let&apos;s Get Started
+                        <a href="#!" role="button" class="btn-fill unlimited__btn">
+                            Let&apos; s&#160;Get Started
                         </a>
-                        <a href="#" role="button" class="btn unlimited__btn">
+                        <a href="#!" role="button" class="btn unlimited__btn">
                             View Pricing
                         </a>
                     </div>
-                    
+
                     <div class="unlimited__offers">
                         <div class="unlimited__offers-inner delimiter">
                             14 days free trial
@@ -532,15 +540,15 @@
                             Exclusive Support
                         </div>
                         <div class="unlimited__offers-inner">
-                            No credit card
-                        </div> 
+                            No&#160;credit card
+                        </div>
                     </div>
                     <div class="shop">
-                        <a href="#" class="shop-inner">
-                            <picture><source srcset="../images/appstore-white.webp" type="image/webp"><img src="../images/appstore-white.png" alt="app-store" class="store"></picture>
+                        <a href="#!" class="shop-inner">
+                            <picture><source srcset="./images/appstore-white.webp" type="image/webp"><img src="./images/appstore-white.png" alt="app-store" class="store" loading="lazy"></picture>
                         </a>
-                        <a href="#" class="shop-inner">
-                            <picture><source srcset="../images/google-small-white.webp" type="image/webp"><img src="../images/google-small-white.png" alt="app-store" class="store"></picture>
+                        <a href="#!" class="shop-inner">
+                            <picture><source srcset="./images/google-small-white.webp" type="image/webp"><img src="./images/google-small-white.png" alt="app-store" class="store" loading="lazy"></picture>
                         </a>
                     </div>
                 </div>
@@ -556,23 +564,23 @@
                         <span class="logo__text">COMU</span>
                     </a>
                     <p class="text__description footer__description">
-                        Aliquam nullam tempor sapien donec and gravida congue an ipsum porta justo velna auctor magna and laoreet augue an auctor gravida donec
+                        Aliquam nullam tempor sapien donec and gravida congue an&#160;ipsum porta justo velna auctor magna and laoreet augue an&#160;auctor gravida donec
                     </p>
                 </div>
                 <ul class="footer__list-main">
                     <li class="footer__item-main">
                         <h6 class="footer__title">Company</h6>
                         <ul class="footer__list">
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">About Us</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Careers</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Press &amp; Media</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Contact Us</a>
                             </li>
                         </ul>
@@ -580,16 +588,16 @@
                     <li class="footer__item-main">
                         <h6 class="footer__title">Discover</h6>
                         <ul class="footer__list">
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Our Blog</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Advertising</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Plans &amp; Pricing</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Testimonials</a>
                             </li>
                         </ul>
@@ -597,16 +605,16 @@
                     <li class="footer__item-main">
                         <h6 class="footer__title">Legal</h6>
                         <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">Terms of Use</a>
+                            <li class="footer__item link">
+                                <a href="#" class="footer__link">Terms of&#160;Use</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Privacy Policy</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Cookie Policy</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Site Map</a>
                             </li>
                         </ul>
@@ -614,16 +622,16 @@
                     <li class="footer__item-main">
                         <h6 class="footer__title">Support</h6>
                         <ul class="footer__list">
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">FAQs</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Editor Help</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Community</a>
                             </li>
-                            <li class="footer__item">
+                            <li class="footer__item link">
                                 <a href="#" class="footer__link">Live Chatting</a>
                             </li>
                         </ul>
@@ -640,14 +648,14 @@
                     </a>
                 </div>
                 <div class="footer__form">
-                    <form action="#" method="post" class="form__email">
+                    <form action="#!" method="post" class="form__email">
                         <input type="email" name="email" class="footer__input" autocomplete="off" required placeholder="Your email here...">
-                        <button type="submit" class="btn-fill footer__btn">Subscribe</button>
+                        <button type="button" class="btn-fill mail__btn">Search</button>
                     </form>
                 </div>
             </div>
             <div class="copyright">
-                <small class="copyright__text">© 2010 - 2021 OLMO. All Rights Reserved</small>
+                <small class="copyright__text">&#169; 2010&#160;&#8212; 2024 OLMO. All Rights Reserved</small>
                 <ul class="social__list">
                     <li class="social__item">
                         <a href="" class="social__icon">
@@ -681,16 +689,13 @@
                     </li>
                 </ul>
                 <address class="contacts">
-                    <a href="mailto:Hello@yourapp.com" class="contacts__mail">Hello@yourapp.com</a>
-                    <a href="tel:+000 000 00 00" class="contacts__tel">+000 000 00 00</a>
+                    <a href="mailto:Hello@yourapp.com" class="contacts__mail link">Hello@yourapp.com</a>
+                    <a href="tel:+000 000 00 00" class="contacts__tel link">+000 000 00 00</a>
                 </address>
             </div>
             <div class="copyright__background"></div>
         </div>
     </footer>
-    <script src="../js/index.bundle.js"></script>
+    <script src="./js/index.bundle.js"></script>
 </body>
 </html>
-
-
-
