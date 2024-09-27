@@ -18,12 +18,15 @@
 
 .send__item {
     margin-bottom: 18px;
+}
+
+.send__title {
     position: relative;
 }
 
-.send__item::before,
-.send__item:nth-child(2)::before,
-.send__item:last-child::before {
+.send__title::before,
+.send__title--stickers::before,
+.send__title--spam::before {
     content: '';
     background: url('../../images/sprite.svg#icon_4') no-repeat;
     background-position: center;
@@ -38,11 +41,11 @@
     left: -70px;
 }
 
-.send__item:nth-child(2)::before {
+.send__title--stickers::before {
     background-image: url('../../images/sprite.svg#icon_5');
 }
 
-.send__item:last-child::before {
+.end__title--spam::before {
     background-image: url('../../images/sprite.svg#icon_6');
 }
 

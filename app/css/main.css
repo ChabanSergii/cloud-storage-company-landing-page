@@ -224,7 +224,6 @@ body {
     margin-bottom: 0;
     padding: 43px 37px 40px;
     max-width: 363px;
-    align-items: stretch;
 }
 
 .advantages__title {
@@ -533,6 +532,7 @@ body {
 .userdata__info,
 .userdata__img {
     flex: 1 1 49%;
+    margin-top: 20px;
 }
 
 .userdata__img-inner {
@@ -758,6 +758,7 @@ body {
     padding-right: 151px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 0;
 }
 
 .footer__top {
@@ -776,6 +777,8 @@ body {
 
 .footer__description {
     width: 300px;
+    margin-right: 30px;
+    padding-right: 30px;
     margin-bottom: 17px;
     line-height: 153%;
 }   
@@ -812,6 +815,7 @@ body {
 }
 
 .footer__bottom {
+    max-width: 927px;
     margin-bottom: 43px;
     display: flex;
     justify-content: space-between;
@@ -821,25 +825,18 @@ body {
 .copyright {
     width: 100%;
     height: 66px;
-    padding: 19px 0;
+    padding: 19px 125px 19px 145px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: var(--blocks_background-color);
 }
 
 .social__list {
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     gap: 9px;
-}
-
-.copyright__background {
-    width: 100%;
-    height: 66px;
-    background: var(--blocks_background-color);
-    position: absolute;
-    left:0;
-    bottom: 0;
-    z-index: -1;
 }
 
 .contacts {
@@ -870,14 +867,16 @@ body {
 
 .footer__form {
     text-wrap: nowrap;
+    width: 100%;
+    margin-left: 60px;
 }
 
 .footer__input {
     height: 41px;
-    max-width: 443px;
+    width: 80%;
     padding: 13px 17px;
     border-radius: 8px 0 0 8px;
-    border: 0.331px solid var(--social_background-color);
+    border: 0.4px solid var(--social_background-color);
 }
 
 .footer__input:focus ~ * {
@@ -981,8 +980,8 @@ body {
 @media (max-width: 1120px) {
     .footer__container {
         margin: 0 auto;
-        padding-left: 0;
-        padding-right: 0;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -1055,6 +1054,10 @@ body {
     .contacts {
         text-align: end;
     }
+
+    .footer__form {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 804px) {
@@ -1117,6 +1120,11 @@ body {
 }
 
 @media (max-width: 790px) {
+    .block_big {
+        padding-top: 69px;
+        padding-bottom: 69px;
+    }
+
     .hero__container,
     .share__container,
     .send__container,
@@ -1170,7 +1178,15 @@ body {
         margin-top: 20px;
     }
 
-    /* Send 790px */
+    .advantages__item {
+        padding: 25px;
+    }
+    
+    .advantages__item:last-child {
+        grid-column: 1 / span 2;
+    }
+
+    /* Send 791px */
     .send__container {
         padding: 65px 108px;
         text-wrap: balance;
@@ -1180,11 +1196,12 @@ body {
         margin-top: 80px;
     }
 
-    .send__item::before,
-    .send__item:nth-child(2)::before,
-    .send__item:last-child::before {
+    .send__title::before,
+    .send__title--stickers::before,
+    .send__title--spam::before {
         background-position: center;
-        left: 250px;
+        left: 40%;
+        right: auto;
         top: -60px;
         position: absolute;
     }
@@ -1230,6 +1247,22 @@ body {
         order: -1;
         margin-bottom: 20px;
     }
+
+    .form__email {
+        margin-right: 20px;
+    }
+
+    .footer__bottom {
+        margin-bottom: 0;
+    }
+
+    .shop {
+        margin-bottom: 0;
+    }
+    .copyright {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 @media (max-width: 597px) {
@@ -1239,6 +1272,24 @@ body {
         margin-right: 15px;
         flex-wrap: wrap;
     }
+
+    .copyright {
+        height: auto;
+        display: block;
+        text-align: center;
+    }
+
+    .copyright > * {
+        margin: 10px;
+    }
+
+    .social__list {
+        justify-content: center;
+    }
+
+    .copyright__text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 585px) {
@@ -1247,6 +1298,17 @@ body {
         row-gap: 20px;
         font-size: 33px;
         margin-left: 120px;
+    }
+}
+
+@media (max-width: 560px) {
+    .advantages__item:last-child {
+        grid-column: auto;
+        width: 100%;
+    }
+
+    .advantages__list {
+        grid-template-columns: 1fr;
     }
 }
 

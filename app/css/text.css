@@ -113,7 +113,7 @@
     color: var(--text-description_dark-color);
     font-family: 'Roboto-Medium',sans-serif;
     font-size: 16.6px;
-    line-height: 148%; /* 24.705px */
+    line-height: 148%;
     letter-spacing: 0.5px;
 }
 
@@ -121,6 +121,13 @@
     color: var(--text-list-title_color);
     font-family: 'Roboto-Bold';
     font-size: 17.8px;
-    line-height: 146.6%; /* 26.204px */
+    line-height: 146.6%;
+}
+
+.copyright__text {
+    color: var(--text_dark-color);
+    font-family: 'Poppins-Regular', sans-serif;
+    font-size: 13px;
+    line-height: 153.2%;
 }
 
