@@ -157,7 +157,6 @@ body {
 }
 
 .hero__learn,
-.hero__play,
 .hero__offers {
     display: flex;
     align-items: center;
@@ -172,7 +171,12 @@ body {
     margin-bottom: 26px;
 }
 
+.hero__play {
+    display: inline-block;
+}
+
 .hero__btn {
+    display: inline-block;
     margin-right: 10px;
     background-color: var(--btn-dark_background-color);
     padding: 9px 25px;
@@ -487,6 +491,7 @@ body {
 }
 
 .action__btn {
+    display: inline-block;
     padding: 9px 32px;
     font-family: 'Roboto-Bold', sans-serif;
 }
@@ -1186,7 +1191,7 @@ body {
         grid-column: 1 / span 2;
     }
 
-    /* Send 791px */
+    /* Send 790px */
     .send__container {
         padding: 65px 108px;
         text-wrap: balance;
@@ -1211,6 +1216,15 @@ body {
     .work__info {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .action__img-inner {
+        margin-bottom: 15px;
+    }
+
+    .action__learn {
+        position: static;
+        margin-bottom: 15px;
     }
 
     /* Commands 790px */
@@ -1313,6 +1327,11 @@ body {
 }
 
 @media (max-width: 426px) {
+    .delimiter + *,
+    .delimiter {
+        font-size: 10px;
+    }
+
     /* Hero 426px */
     .hero__container {
         margin-bottom: 150px;
@@ -1373,11 +1392,71 @@ body {
         font-size: 16px;
     }
 
+    .questions__container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .questions__list {
+        display: block;
+    }
+    .questions__list > * {
+        margin-right: 0 !important;
+    }
+
+    .mail__btn {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .copyright {
         flex-wrap: wrap;
     }
 
     .copyright > * {
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 376px) {
+    .userdata__container,
+    .security__container,
+    .share__container,
+    .hero__container,
+    .commands__container,
+    .action__container,
+    .block_big,
+    .advantages__item {
+        padding: 18px;
+    }
+
+    .hero__container {
+        margin-bottom: 160px;
+    }
+
+    .unlimited__buttons,
+    .hero__learn,
+    .commands__buttons {
+        margin-top: 20px;
+        display: block;
+    }
+
+    .hero__learn {
+        margin-bottom: 5px;
+    }
+    
+    .unlimited__btn,
+    .action__btn,
+    .hero__play,
+    .hero__btn,
+    .btn-fill.commands__btn,
+    .btn.commands__btn {
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .work__item {
+        padding-right: 35px;
     }
 }
