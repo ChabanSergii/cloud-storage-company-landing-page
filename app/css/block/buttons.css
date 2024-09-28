@@ -19,13 +19,18 @@
 
 .btn:focus {
     border: 3px solid var(--btn_background-color);
-    background-color: var(--main_color);
+    background-color: var(--main_color-hover);
 }
 
+.btn-fill:hover,
 .btn:hover {
     color: var(--btn_text-color);
-    background-color: var(--main_color);
+    background-color: var(--main_color-hover);
     color: white;
+}
+
+.hero__btn:hover {
+    background-color: var(--btn-dark_background-color--hover);
 }
 
 .btn-fill {

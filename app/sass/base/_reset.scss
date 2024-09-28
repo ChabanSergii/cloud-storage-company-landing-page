@@ -37,3 +37,8 @@ img {width: 100%;}
 address {
     font-style: normal;
 }
+
+section:focus,
+footer:focus {
+    outline: none;
+}

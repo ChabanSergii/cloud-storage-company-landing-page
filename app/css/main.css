@@ -1,4 +1,4 @@
-@import "./block/normalize.css";
+/* @import "./block/normalize.css"; */
 @import "./block/bootstrap.css";
 @import "./text.css";
 @import "./block/base.css";
@@ -9,6 +9,7 @@
 
 :root {
     --main_color: rgba(254, 156, 105, 1);
+    --main_color-hover: rgb(231, 111, 47);
     --text_dark-color: rgba(0, 0, 0, 1);
     --text_light-color: rgba(69, 90, 100, 1);
     --text-description_light-color: rgba(83, 83, 89, 1);
@@ -17,6 +18,7 @@
     --text-placeholder_color: rgba(143, 143, 143, 1);
     --text-logo_color: rgba(50, 50, 50, 1);
     --btn-dark_background-color: rgba(69, 90, 100, 1);
+    --btn-dark_background-color--hover: rgb(36, 49, 55);
     --btn-fill_text-color: rgba(243, 252, 255, 1);
     --btn_text-color: rgba(0, 0, 0, 1);
     --btn_background-color: rgba(254, 156, 105, 1);
@@ -118,6 +120,10 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.header__logo {
+    display: inline-block;
 }
 
 .header__list {
@@ -569,8 +575,6 @@ body {
     max-width: 521px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 39px;
-    padding-right: 39px;
 }
 
 .features__title-description {
@@ -843,7 +847,6 @@ body {
     display: flex;
     gap: 9px;
 }
-
 .contacts {
     margin-bottom: 0;
 }
