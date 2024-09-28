@@ -20,7 +20,6 @@ const csso              = require('gulp-csso');
 const size              = require('gulp-size');                 /* !!! use only 4.0.1 !!! */
 const rename            = require('gulp-rename');
 const cssMedia          = require('gulp-group-css-media-queries');
-const shorthand         = require('gulp-shorthand');
 const webpCss           = require('gulp-webp-css');
 const replace           = require('gulp-replace');
 
@@ -37,9 +36,7 @@ function css() {
         .pipe(concat("main.css"))
         .pipe(cssimport())
         .pipe(autoprefixer())
-        .pipe(shorthand())
         .pipe(cssMedia())
-        /* .pipe(webpCss()) */
         .pipe(size({ title: "main.css" }))
         .pipe(
 			replace(
